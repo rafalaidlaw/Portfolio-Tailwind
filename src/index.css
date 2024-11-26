@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-7xl px-8;
+  }
+  .hover-icon {
+    @apply h-16 w-16 text-orange-700 lg:hover:text-amber-200 duration-300;
+  }
+}

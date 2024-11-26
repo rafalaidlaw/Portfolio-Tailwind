@@ -1,4 +1,5 @@
 import heroImg from "../assets/hero.svg";
+import shadowImg from "../assets/shadow.svg";
 import {
   FaGithubSquare,
   FaLinkedin,
@@ -8,36 +9,79 @@ import {
 
 const Hero = () => {
   return (
-    <div className="bg-orange-100 py-24">
-      <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8">
-        <article>
-          <h1 className="text-7xl font-bold tracking-wider text-orange-700 drop-shadow">
+    <div className="bg-orange-100 py-7 ">
+      <div className="align-element grid md:grid-cols-3 items-center gap-4">
+        <article className="grow animate-fade1">
+          <h1 className="text-7xl font-bold tracking-wider text-orange-400 drop-shadow">
             Rafael
           </h1>
           <p className="mt-4 text-3xl text-orange-500 capitalize tracking-wide">
             Front-End Developer
           </p>
-          <p className="mt-2 text-lg text-orange-500 capitalize tracking-wide">
-            React.js, Animator, E-commerce
+          <p className="mt-2 text-lg text-orange-500 tracking-wide">
+            Responsive websites, applications, and banner ads. Eye-catching
+            design adhering to modern best practices, accessibility, and
+            cross-device compatibility.
           </p>
 
           <div className="flex gap-x-4 mt-4">
             <a href="https://github.com/rafalaidlaw">
-              <FaGithubSquare className="h-8 w-8 text-orange-500 hover:text-black duration-300" />
+              <FaGithubSquare className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
             <a href="#">
-              <FaLinkedin className="h-8 w-8 text-orange-500 hover:text-black duration-300" />
+              <FaLinkedin className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
             <a href="#">
-              <FaInstagram className="h-8 w-8 text-orange-500 hover:text-black duration-300" />
+              <FaInstagram className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
             <a href="#">
-              <FaEtsy className="h-8 w-8 text-orange-500 hover:text-black duration-300" />
+              <FaEtsy className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
           </div>
         </article>
+        <article className="mt-2 text-lg text-orange-300 tracking-wide sm:animate-fade2">
+          <h1 className="hidden md:block text-7xl font-bold tracking-wider text-orange-100 opacity-0">
+            Rafael
+          </h1>
+          {/* <h1 class="relative font-mono md:inset-x-10">
+            React.js, Redux, Typescript, Node.js, Firebase, C#, SASS, Tailwind,
+            Angular, JavaScript, ActionScript, Git, Markdown, Flexbox,
+            BootStrap, CSS, HTML, GraphQL, JSON, XML, MUI
+          </h1> */}
+        </article>
+        <article className="hidden md:block animate-fade">
+          <div className="grid grid-cols-subgrid gap-4 md:grid-cols-3">
+            <article className="sm:block"></article>
+            <article className="sm:block">
+              <div className="animate-float">
+                <img
+                  src={heroImg}
+                  alt="Rafael in Packaging"
+                  className="h-50 flex"
+                />
+              </div>
+            </article>
+            <article className="sm:block"></article>
+          </div>
+        </article>
+      </div>
+      <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-3 items-center gap-4">
+        <article className="grow"></article>
+        <article className="sm:block"></article>
         <article className="hidden md:block">
-          <img src={heroImg} alt="Rafa Package" className="h-80 lg:h-96" />
+          <div className="grid grid-cols-subgrid gap-4 md:grid-cols-3">
+            <article className="sm:block"></article>
+            <article className="sm:block animate-fade">
+              <div className="animate-pulse">
+                <img
+                  src={shadowImg}
+                  alt="Packaging Shadow"
+                  className="h-50 flex"
+                />
+              </div>
+            </article>
+            <article className="sm:block"></article>
+          </div>
         </article>
       </div>
     </div>
