@@ -1,11 +1,6 @@
 import heroImg from "../assets/hero.svg";
 import shadowImg from "../assets/shadow.svg";
-import {
-  FaGithubSquare,
-  FaLinkedin,
-  FaEtsy,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -28,13 +23,13 @@ const Hero = () => {
             <a href="https://github.com/rafalaidlaw">
               <FaGithubSquare className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/rafalaidlaw/">
               <FaLinkedin className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
-            <a href="#">
-              <FaInstagram className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
+            <a href="https://cosmic-seahorse-cfa092.netlify.app/">
+              <FaReact className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
-            <a href="#">
+            <a href="https://retromodgod.etsy.com">
               <FaEtsy className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
             </a>
           </div>

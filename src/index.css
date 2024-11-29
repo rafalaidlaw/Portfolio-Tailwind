@@ -7,6 +7,6 @@
     @apply mx-auto max-w-7xl px-8;
   }
   .hover-icon {
-    @apply h-16 w-16 fill-orange-700 lg:hover:fill-amber-200 duration-300;
+    @apply h-16 w-16 fill-orange-700 lg:hover:fill-amber-200 duration-300 animate-fade3;
   }
 }
