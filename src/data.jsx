@@ -11,13 +11,13 @@ import {
   FaBootstrap,
   FaCss3,
 } from "react-icons/fa";
-import heroImg from "./assets/logos/firebase-svgrepo-com.svg";
+import heroImg from "./assets/Rafa_Bale_Developer_Reel.gif";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
   { id: nanoid(), href: "#skills", text: "skills" },
   { id: nanoid(), href: "#about", text: "about" },
-  { id: nanoid(), href: "#projects", text: "projects" },
+  { id: nanoid(), href: "#projects", text: "portfolio" },
 ];
 
 export const skills = [
@@ -221,26 +221,26 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://react-projects.netlify.app/",
-    github: "https://github.com/john-smilga",
-    title: "first project",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+    img: "./src/assets/Retro_Mod_Site.gif",
+    url: "https://cosmic-seahorse-cfa092.netlify.app/",
+    github: "https://github.com/rafalaidlaw",
+    title: "React E-Commerce Website",
+    text: "My most recent project involved migrating my e-commerce business to a React and Google Firebase-based website, where I implemented modern web practices and ensured a seamless user experience across all devices. Additionally, I have a solid understanding of version control systems like Git.",
   },
   {
     id: nanoid(),
-    img: "https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://react-projects.netlify.app/",
-    github: "https://github.com/john-smilga",
-    title: "second project",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+    img: "./src/assets/Rafa_Bale_Developer_Reel.gif",
+    url: "https://vimeo.com/950854029",
+    github: "https://github.com/rafalaidlaw",
+    title: "Internet Advertisments",
+    text: "These banner ads were built with Javascript. All movements, ease-outs, and effects.  We did this to save on memory and to quickly implement and update multiple iterations for evolving ad campaigns. With reusable and sustainable code we could create many ads with minor tweaks.",
   },
-  {
-    id: nanoid(),
-    img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://react-projects.netlify.app/",
-    github: "https://github.com/john-smilga",
-    title: "third project",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
-  },
+  // {
+  //   id: nanoid(),
+  //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   url: "https://react-projects.netlify.app/",
+  //   github: "https://github.com/john-smilga",
+  //   title: "third project",
+  //   text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+  // },
 ];
