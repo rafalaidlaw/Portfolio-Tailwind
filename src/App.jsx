@@ -7,8 +7,10 @@ import Projects from "./components/Projects";
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <article className="bg-orange-400 py-5 px-4">
+        <Navbar />
+        <Hero />
+      </article>
       <Skills />
       <About />
       <Projects />
