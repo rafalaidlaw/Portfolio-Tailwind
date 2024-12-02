@@ -221,7 +221,7 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: "./src/assets/Retro_Mod_Site.gif",
+    img: "./assets/Retro_Mod_Site.gif",
     url: "https://cosmic-seahorse-cfa092.netlify.app/",
     github: "https://github.com/rafalaidlaw",
     title: "React E-Commerce Website",
@@ -229,7 +229,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: "./src/assets/Rafa_Bale_Developer_Reel.gif",
+    img: "./assets/Rafa_Bale_Developer_Reel.gif",
     url: "https://vimeo.com/950854029",
     github: "https://github.com/rafalaidlaw",
     title: "Internet Advertisments",
