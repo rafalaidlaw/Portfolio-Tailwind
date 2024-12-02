@@ -4,7 +4,7 @@ import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="bg-orange-100 py-7 rounded-b-lg">
+    <div className="bg-orange-100 py-16 rounded-b-lg" id="home">
       <div className="align-element grid md:grid-cols-3 items-center gap-4">
         <article className="grow animate-fade1">
           <h1 className="text-7xl font-bold tracking-wider text-orange-400 drop-shadow">
