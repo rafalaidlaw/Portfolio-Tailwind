@@ -4,8 +4,8 @@ import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
   return (
-    <div className="bg-orange-300">
-      <section className="py-10 align-element bg-orange-300" id="projects">
+    <div className="">
+      <section className="py-10 align-element " id="projects">
         <article className="bg-orange-200 rounded-lg py-5 px-8">
           <div className="border-b border-orange-500  pb-5">
             <h2 className="text-lg text-center relative font-mono text-orange-600  tracking-wider drop-shadow">
