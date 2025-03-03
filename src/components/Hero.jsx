@@ -1,4 +1,4 @@
-import heroImg from "../assets/hero.svg";
+import heroImg from "../assets/hero-cube.gif";
 import shadowImg from "../assets/shadow.svg";
 import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 
@@ -45,9 +45,9 @@ const Hero = () => {
           </h1> */}
         </article>
         <article className="hidden md:block animate-fade">
-          <div className="grid grid-cols-subgrid gap-4 md:grid-cols-3">
-            <article className="sm:block"></article>
-            <article className="sm:block">
+          <div className="grid grid-cols-subgrid gap-4 md:grid-cols-2">
+            {/* <article className="sm:block"></article> */}
+            <article className="lg:block">
               <div className="animate-float">
                 <img
                   src={heroImg}
@@ -56,16 +56,16 @@ const Hero = () => {
                 />
               </div>
             </article>
-            <article className="sm:block"></article>
+            {/* <article className="sm:block"></article> */}
           </div>
         </article>
       </div>
-      <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-3 items-center gap-4">
+      <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-3 items-center gap-12">
         <article className="grow"></article>
         <article className="sm:block"></article>
         <article className="hidden md:block">
-          <div className="grid grid-cols-subgrid gap-4 md:grid-cols-3">
-            <article className="sm:block"></article>
+          <div className="grid grid-cols-subgrid gap-4 md:grid-cols-2">
+            {/* <article className="sm:block"></article> */}
             <article className="sm:block animate-fade">
               <div className="animate-pulse">
                 <img
