@@ -1,8 +1,8 @@
 import nubbin from "../assets/nubbinsvg.svg";
 export const Nubbin = () => {
   return (
-    <div>
-      <article className=" grid grid-flow-col grid-rows-1">
+    <div className="hidden md:block">
+      <article className=" grid grid-flow-col grid-rows-1 ">
         <div></div>
         <div></div>
         <div></div>

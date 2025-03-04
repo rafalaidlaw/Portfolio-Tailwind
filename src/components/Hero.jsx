@@ -2,6 +2,25 @@ import heroImg from "../assets/hero-cube.gif";
 import shadowImg from "../assets/shadowpng.png";
 import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 
+borderGenerator = (n) => {
+  let nubbin = [];
+  for (let i = 0; i < n; i++) {
+    nubbin.push(`<div className="border-t-2 border-orange-200">`);
+    nubbin.push(`<div className="border-r-2  border-orange-300">`);
+    nubbin.push(`<div className="border-l-2 border-orange-300">`);
+  }
+  return nubbin;
+};
+divGenerator = (n) => {
+  let nubbin = [];
+  for (let i = 0; i < n; i++) {
+    nubbin.push(`</div>`);
+    nubbin.push(`</div>`);
+    nubbin.push(`</div>`);
+  }
+  return nubbin;
+};
+
 const Hero = () => {
   return (
     <div className="border-t-2 border-orange-200">

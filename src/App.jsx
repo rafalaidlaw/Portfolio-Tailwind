@@ -26,7 +26,7 @@ const App = () => {
                           <div className=" border-r-8 border-orange-800">
                             <div className=" border-l-8 border-orange-800">
                               <div className=" border-t-8 border-orange-800">
-                                <div className=" p-14">
+                                <div className=" md:p-14">
                                   <div>
                                     <Hero className="bg-orange-400 py-5 px-4" />
                                   </div>
