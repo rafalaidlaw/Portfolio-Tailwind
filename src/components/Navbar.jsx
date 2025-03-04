@@ -1,4 +1,5 @@
 import { links } from "../data";
+import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -52,6 +53,20 @@ const Navbar = () => {
                                             })}
                                           </div>
                                         </article>
+                                        <div className="flex gap-x-4 mt-4">
+                                          <a href="https://github.com/rafalaidlaw">
+                                            <FaGithubSquare className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
+                                          </a>
+                                          <a href="https://www.linkedin.com/in/rafalaidlaw/">
+                                            <FaLinkedin className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
+                                          </a>
+                                          <a href="https://cosmic-seahorse-cfa092.netlify.app/">
+                                            <FaReact className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
+                                          </a>
+                                          <a href="https://retromodgod.etsy.com">
+                                            <FaEtsy className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
+                                          </a>
+                                        </div>
                                       </div>
                                     </nav>
                                   </div>

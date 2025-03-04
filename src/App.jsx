@@ -13,7 +13,6 @@ const App = () => {
         <div className="bg-orange-900">
           <div className="md:sticky top-0 z-50  ">
             <Navbar />
-            <Nubbin />
           </div>
           <div className="border-orange-600 border-r-8 border-l-8">
             <div className="border-orange-600 border-r-2 border-l-2">
@@ -27,11 +26,12 @@ const App = () => {
                             <div className=" border-l-8 border-orange-800">
                               <div className=" border-t-8 border-orange-800">
                                 <div className=" md:p-14">
-                                  <div>
+                                  <div className="scale-95">
                                     <Hero className="bg-orange-400 py-5 px-4" />
+
+                                    <Skills />
                                   </div>
 
-                                  <Skills />
                                   <About />
                                   <Projects />
                                 </div>

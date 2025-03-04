@@ -20,7 +20,7 @@ const Footer = () => {
                                     <div className="border-b-8 border-orange-700 "></div>
 
                                     <nav className="bg-orange-700  ">
-                                      <div className=" align-element flex flex-col sm:flex-row sm:gap-x-16 sm:items-center animate-fade1">
+                                      <div className=" align-element flex justify-center items-center animate-fade1">
                                         <article className="grid grid-rows-2">
                                           <p className="lg:text-center sm:text-left relative font-mono text-orange-500">
                                             You have reached the end of the
