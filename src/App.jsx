@@ -4,6 +4,9 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Title from "./components/Title";
+import TitleBottomCap from "./components/TitleBottomCap";
+
 import Nubbin from "./components/Nubbin";
 
 const App = () => {
@@ -11,7 +14,7 @@ const App = () => {
     <>
       <div className="bg-orange-950">
         <div className="bg-orange-900">
-          <div className="md:sticky top-0 z-50  ">
+          <div className="md:sticky top-0 z-50 animate-box2">
             <Navbar />
           </div>
           <div className="border-orange-600 border-r-8 border-l-8">
@@ -24,9 +27,13 @@ const App = () => {
                         <div className=" border-r-8 border-orange-800">
                           <div className=" border-r-8 border-orange-800">
                             <div className=" border-l-8 border-orange-800">
-                              <div className=" border-t-8 border-orange-800">
-                                <div className=" md:p-14">
-                                  <div className="scale-95">
+                              <div className=" border-t-8 border-orange-800 p-8">
+                                <div className="animate-box1">
+                                  <Title />
+                                  <TitleBottomCap />
+                                </div>
+                                <div className=" md:p-6">
+                                  <div className="scale-95 animate-box">
                                     <Hero className="bg-orange-400 py-5 px-4" />
 
                                     <Skills />
