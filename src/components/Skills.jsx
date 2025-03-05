@@ -35,10 +35,7 @@ const Skills = () => {
                                                             <div className="border-r-2 border-orange-300">
                                                               <div className="border-l-2 border-orange-300">
                                                                 <div className="border-b-2 border-orange-500">
-                                                                  <section
-                                                                    className="py-5 align-element bg-orange-400 "
-                                                                    id="skills"
-                                                                  >
+                                                                  <section className="py-5 align-element bg-orange-400 ">
                                                                     <SectionTitle text="Hover over icon below for explanation, click for example project. " />
                                                                     <div className="py-5 gap-2 flex flex-wrap justify-center">
                                                                       {skills.map(

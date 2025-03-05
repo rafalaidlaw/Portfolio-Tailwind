@@ -23,7 +23,7 @@ import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="bg-orange-300 Aborder-t-2 border-orange-200">
+    <div className="bg-orange-300 Aborder-t-2 border-orange-200 " id="skills">
       <div className="border-r-2 border-orange-300">
         <div className="border-l-2 border-orange-300">
           <div className="border-t-2 border-orange-200">
@@ -53,10 +53,7 @@ const Hero = () => {
                                                           <div className="border-t-2 border-orange-200">
                                                             <div className="border-r-2  border-orange-300">
                                                               <div className="border-l-2 border-orange-300">
-                                                                <div
-                                                                  className="bg-orange-100 py-6"
-                                                                  id="home"
-                                                                >
+                                                                <div className="bg-orange-100 py-6">
                                                                   {/* <div className=" grid grid-col-3 items-center ">
                                                                     <div className="">
                                                                       <article className="grow animate-fade1">

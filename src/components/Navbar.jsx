@@ -24,7 +24,7 @@ const Navbar = () => {
                                         <article className="grid grid-rows-2">
                                           <h2 className="text-3xl font-bold text-orange-500">
                                             Rafael
-                                            <span className="text-amber-500">
+                                            <span className="text-orange-500">
                                               {" "}
                                               Laidlaw
                                             </span>

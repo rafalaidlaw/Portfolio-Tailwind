@@ -8,6 +8,10 @@ export default {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },
+        fadeLight: {
+          from: { opacity: 0.5 },
+          to: { opacity: 1 },
+        },
         typewriter: {
           to: {
             left: "100%",
@@ -67,7 +71,7 @@ export default {
       animation: {
         box: "box 2s ease-in-out",
         box1: "box1 1s ease-in-out",
-        slide: "slide .5s ease-in-out",
+        slide: "slide .5s ease-in-out ",
         float: "float 3s ease-in-out infinite",
         pulse: "pulse 3s ease-in-out infinite",
         dance1: "dance 4s ease-in-out ",
@@ -87,6 +91,7 @@ export default {
         fade2: "fadeIn 1s ease-in-out",
         fade3: "fadeIn 1.2s ease-in-out",
         fade: "fadeIn 1.6s ease-in-out",
+        fade5: "fadeLight .5s ease-in-out",
       },
     },
   },
