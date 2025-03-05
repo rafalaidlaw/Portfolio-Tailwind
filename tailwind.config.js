@@ -59,6 +59,20 @@ export default {
             opacity: "1",
           },
         },
+        box2: {
+          "0%": {
+            scale: "1",
+          },
+          "50%": {
+            scale: "2",
+          },
+          "70%": {
+            scale: "2",
+          },
+          "100%": {
+            scale: "1",
+          },
+        },
         slide: {
           "0%": {
             transform: "translateY(-25%)",
@@ -71,6 +85,7 @@ export default {
       animation: {
         box: "box 2s ease-in-out",
         box1: "box1 1s ease-in-out",
+        box2: "box2 20s ease-in-out infinite",
         slide: "slide .5s ease-in-out ",
         float: "float 3s ease-in-out infinite",
         pulse: "pulse 3s ease-in-out infinite",

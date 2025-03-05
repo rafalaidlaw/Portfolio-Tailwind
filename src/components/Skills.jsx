@@ -4,7 +4,7 @@ import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
   return (
-    <div className="bg-orange-300 border-b-2 border-orange-500">
+    <div className="bg-orange-400 border-b-2 border-orange-500 max-w-">
       <div className="border-r-2 border-orange-300">
         <div className="border-l-2 border-orange-300">
           <div className="border-b-2 border-orange-500">
@@ -36,7 +36,7 @@ const Skills = () => {
                                                               <div className="border-l-2 border-orange-300">
                                                                 <div className="border-b-2 border-orange-500">
                                                                   <section className="py-5 align-element bg-orange-400 ">
-                                                                    <SectionTitle text="Hover over icon below for explanation, click for example project. " />
+                                                                    <SectionTitle text="These are the languages I have worked in. Hover for info. Click for example. " />
                                                                     <div className="py-5 gap-2 flex flex-wrap justify-center">
                                                                       {skills.map(
                                                                         (

@@ -36,10 +36,12 @@ const App = () => {
                                   <TitleBottomCap />
                                 </div>
                                 <div className=" md:p-6">
-                                  <div className="scale-95  animate-box">
-                                    <Hero className="bg-orange-400 py-5 px-4" />
+                                  <div className="flex justify-center">
+                                    <div className="scale-95  animate-box  ">
+                                      <Hero className="bg-orange-400 py-5 px-4" />
 
-                                    <Skills />
+                                      <Skills />
+                                    </div>
                                   </div>
 
                                   <About />
