@@ -8,7 +8,9 @@ import Footer from "./components/Footer";
 import Title from "./components/Title";
 import Rectangle from "./components/Rectangle";
 import TitleBottomCap from "./components/TitleBottomCap";
+import NavBottomCap from "./components/NavBottomCap";
 import MatrixRainingCode from "./components/MatrixRainingCode";
+import Matrix2 from "./components/Matrix2";
 
 import Nubbin from "./components/Nubbin";
 
@@ -17,24 +19,28 @@ const App = () => {
     <>
       <div className="">
         <Rectangle />
-        <MatrixRainingCode className="" />
+        <MatrixRainingCode />
+
         <Top />
         <div className=" animate-fade5">
           <div className="md:sticky top-0 z-50 scale-100">
             <Navbar />
+            <div className=" pb-5 md:hidden md:pb-0">
+              <NavBottomCap />
+            </div>
           </div>
 
-          <div className="border-orange-600 border-r-8 border-l-8">
-            <div className="border-orange-600 border-r-2 border-l-2">
-              <div className="border-l-8 border-orange-700">
-                <div className="border-l-8 border-orange-700">
-                  <div className="border-r-8 border-orange-700">
-                    <div className="border-r-8 border-orange-700">
-                      <div className=" border-l-8 border-orange-800">
-                        <div className=" border-r-8 border-orange-800">
-                          <div className=" border-r-8 border-orange-800">
-                            <div className=" border-l-8 border-orange-800">
-                              <div className="border-t-8 border-orange-800 md:p-8 ">
+          <div className="lg:border-orange-600 lg:border-r-8 lg:border-l-8">
+            <div className="lg:border-orange-600 lg:border-r-2 lg:border-l-2">
+              <div className="lg:border-l-8 lg:border-orange-700">
+                <div className="lg:border-l-8 lg:border-orange-700">
+                  <div className="lg:border-r-8 lg:border-orange-700">
+                    <div className="lg:border-r-8 lg:border-orange-700">
+                      <div className=" lg:border-l-8 lg:border-orange-800">
+                        <div className=" lg:border-r-8 lg:border-orange-800">
+                          <div className=" lg:border-r-8 lg:border-orange-800">
+                            <div className=" lg:border-l-8 lg:border-orange-800">
+                              <div className="lg:border-t-8 lg:border-orange-800 md:p-8 ">
                                 <div className="animate-box1 scale-95">
                                   <Title />
                                   <TitleBottomCap />

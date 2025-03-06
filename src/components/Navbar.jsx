@@ -21,7 +21,7 @@ const Navbar = () => {
                                   <div className="border-t-8 border-orange-700 ">
                                     <nav className="bg-orange-700  ">
                                       <div className=" align-element flex flex-col sm:flex-row sm:gap-x-16 sm:items-center animate-fade1">
-                                        <article className="grid grid-rows-2">
+                                        <article className="grid grid-rows-flow">
                                           <h2 className="text-3xl font-bold text-orange-500">
                                             Rafael
                                             <span className="text-orange-500">
@@ -53,19 +53,19 @@ const Navbar = () => {
                                             })}
                                           </div>
                                         </article>
-                                        <div className="flex gap-x-4 mt-4">
+                                        <div className="lg:absolute lg:right-20 flex gap-x-4 m-2">
                                           <a href="https://github.com/rafalaidlaw">
                                             <FaGithubSquare className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
                                           </a>
                                           <a href="https://www.linkedin.com/in/rafalaidlaw/">
                                             <FaLinkedin className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
                                           </a>
-                                          <a href="https://cosmic-seahorse-cfa092.netlify.app/">
+                                          {/* <a href="https://cosmic-seahorse-cfa092.netlify.app/">
                                             <FaReact className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
                                           </a>
                                           <a href="https://retromodgod.etsy.com">
                                             <FaEtsy className="h-8 w-8 text-orange-500 hover:text-orange-900 duration-300" />
-                                          </a>
+                                          </a> */}
                                         </div>
                                       </div>
                                     </nav>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const MatrixRainingCode = () => {
+const Matrix2 = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -9,7 +9,7 @@ const MatrixRainingCode = () => {
     let width = (canvas.width = window.innerWidth + 300);
     let height = (canvas.height = window.innerHeight);
     let columns = Math.floor(width / 20); // Number of columns based on character width
-    const characters = "|";
+    const characters = ".";
     const charArray = characters.split("");
     let drops = [];
 
@@ -23,7 +23,7 @@ const MatrixRainingCode = () => {
 
     const draw = () => {
       // Create a translucent black rectangle to create the fading effect
-      ctx.fillStyle = "rgba(124, 45, 18, 0.347)";
+      ctx.fillStyle = "rgba(121, 42, 3, 0.1)";
       ctx.fillRect(0, 0, width, height);
 
       ctx.fillStyle = "#ba3f00"; // Green color for characters
@@ -90,4 +90,4 @@ const MatrixRainingCode = () => {
   );
 };
 
-export default MatrixRainingCode;
+export default Matrix2;

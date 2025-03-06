@@ -112,6 +112,7 @@ export default {
         fade3: "fadeIn 1.2s ease-in-out",
         fade: "fadeIn 1.6s ease-in-out",
         fade5: "fadeLight .5s ease-in-out",
+        fade6: "fadeIn 10s ease-in-out",
         fadeOut: "fadeOut 2s ease-in-out infinite",
       },
     },
