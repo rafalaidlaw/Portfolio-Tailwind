@@ -62,62 +62,62 @@ const Hero = () => {
                                                                       <h1 className="text-7xl font-bold tracking-wider  text-orange-400 drop-shadow"></h1>
                                                                       <div className="grid grid-cols-2 gap-x-6">
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:text-orange-300 animate-dance1 hover:animate-none">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:text-orange-300 animate-dance1 hover:animate-none">
                                                                             JavaScript
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance12">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance12">
                                                                             React.js
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance4">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance4">
                                                                             Redux
                                                                           </p>
                                                                         </div>
                                                                         <div className="">
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance10">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance10">
                                                                             Typescript
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance2">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance2">
                                                                             Node.js
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance5">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance5">
                                                                             Firebase
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance11">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance11">
                                                                             MUI
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance3">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance3">
                                                                             AS3
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance8">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance8">
                                                                             SASS
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance4">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance4">
                                                                             Tailwind
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance6">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance6">
                                                                             ThreeJS
                                                                           </p>
                                                                         </div>
                                                                         <div>
-                                                                          <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance9">
+                                                                          <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance9">
                                                                             Phaser
                                                                           </p>
                                                                         </div>
@@ -156,62 +156,62 @@ const Hero = () => {
                                                                       <div className="animate-fade2 flex justify-center">
                                                                         <div className="grid grid-cols-2 gap-x-6">
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance11">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance11">
                                                                               Angular
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance6">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance6">
                                                                               Vite
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance12">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance12">
                                                                               JQuery
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance1">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance1">
                                                                               C#
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance4">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance4">
                                                                               Git
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance7">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance7">
                                                                               Markdown
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance5">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance5">
                                                                               BootStrap
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance8">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance8">
                                                                               CSS
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance2">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance2">
                                                                               HTML
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance10">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance10">
                                                                               GraphQL
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance3">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance3">
                                                                               JSON
                                                                             </p>
                                                                           </div>
                                                                           <div>
-                                                                            <p className="mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance9">
+                                                                            <p className="hidden md:block mt-2 text-2xl text-orange-300 tracking-wide hover:animate-none hover:text-orange-300 animate-dance9">
                                                                               XML
                                                                             </p>
                                                                           </div>

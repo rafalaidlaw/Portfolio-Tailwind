@@ -36,7 +36,7 @@ const Skills = () => {
                                                               <div className="border-l-2 border-orange-300">
                                                                 <div className="border-b-2 border-orange-500">
                                                                   <section className="py-5 align-element bg-orange-400 ">
-                                                                    <SectionTitle text="These are the languages I have worked in. Hover for info. Click for example. " />
+                                                                    <SectionTitle text="These are the languages I have worked in. Click for example. " />
                                                                     <div className="py-5 gap-2 flex flex-wrap justify-center">
                                                                       {skills.map(
                                                                         (

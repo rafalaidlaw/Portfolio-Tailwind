@@ -18,6 +18,9 @@ const App = () => {
   return (
     <>
       <div className="">
+        <div className="hidden md:block">
+          <Rectangle />
+        </div>
         <MatrixRainingCode />
 
         <Top />
