@@ -123,7 +123,7 @@ const Hero = () => {
                                                                         </div>
                                                                       </div>
                                                                     </article>
-                                                                    <div className="hover:animate-box2">
+                                                                    <div className="hover:animate-box2 ">
                                                                       <div className="flex justify-center animate-fade  ">
                                                                         <div className="animate-float ">
                                                                           <img
@@ -138,7 +138,7 @@ const Hero = () => {
                                                                       <article className="hidden md:flex justify-center">
                                                                         <div className="">
                                                                           <article className="sm:block animate-fade">
-                                                                            <div className="animate-pulse">
+                                                                            <div className="animate-pulse ">
                                                                               <img
                                                                                 src={
                                                                                   shadowImg
