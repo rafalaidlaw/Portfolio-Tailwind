@@ -18,7 +18,6 @@ const App = () => {
   return (
     <>
       <div className="">
-        <Rectangle />
         <MatrixRainingCode />
 
         <Top />
@@ -30,17 +29,17 @@ const App = () => {
             </div>
           </div>
 
-          <div className="lg:border-orange-600 lg:border-r-8 lg:border-l-8">
-            <div className="lg:border-orange-600 lg:border-r-2 lg:border-l-2">
-              <div className="lg:border-l-8 lg:border-orange-700">
-                <div className="lg:border-l-8 lg:border-orange-700">
-                  <div className="lg:border-r-8 lg:border-orange-700">
-                    <div className="lg:border-r-8 lg:border-orange-700">
-                      <div className=" lg:border-l-8 lg:border-orange-800">
-                        <div className=" lg:border-r-8 lg:border-orange-800">
-                          <div className=" lg:border-r-8 lg:border-orange-800">
-                            <div className=" lg:border-l-8 lg:border-orange-800">
-                              <div className="lg:border-t-8 lg:border-orange-800 md:p-8 ">
+          <div className="md:border-orange-600 md:border-r-8 md:border-l-8">
+            <div className="md:border-orange-600 md:border-r-2 md:border-l-2">
+              <div className="md:border-l-8 md:border-orange-700">
+                <div className="md:border-l-8 md:border-orange-700">
+                  <div className="md:border-r-8 md:border-orange-700">
+                    <div className="md:border-r-8 md:border-orange-700">
+                      <div className=" md:border-l-8 md:border-orange-800">
+                        <div className=" md:border-r-8 md:border-orange-800">
+                          <div className=" md:border-r-8 md:border-orange-800">
+                            <div className=" md:border-l-8 md:border-orange-800">
+                              <div className="md:border-t- md:border-orange-800 md:p-8 ">
                                 <div className="animate-box1 scale-95">
                                   <Title />
                                   <TitleBottomCap />
