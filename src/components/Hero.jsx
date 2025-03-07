@@ -123,7 +123,7 @@ const Hero = () => {
                                                                         </div>
                                                                       </div>
                                                                     </article>
-                                                                    <div>
+                                                                    <div className="hover:animate-box2">
                                                                       <div className="flex justify-center animate-fade  ">
                                                                         <div className="animate-float ">
                                                                           <img

@@ -10,7 +10,8 @@ import Rectangle from "./components/Rectangle";
 import TitleBottomCap from "./components/TitleBottomCap";
 import NavBottomCap from "./components/NavBottomCap";
 import MatrixRainingCode from "./components/MatrixRainingCode";
-import Matrix2 from "./components/Matrix2";
+import InternetBanner from "./components/InternetBanner";
+import ModGodSite from "./components/ModGodSite";
 
 import Nubbin from "./components/Nubbin";
 
@@ -20,8 +21,8 @@ const App = () => {
       <div className="bg-orange-900 md:bg-transparent">
         <div className="hidden  md:block ">
           <Rectangle />
+          <MatrixRainingCode />
         </div>
-        <MatrixRainingCode />
 
         <Top />
         <div className=" animate-fade5">
@@ -55,6 +56,8 @@ const App = () => {
                                       <Skills className="bg-orange-400 " />
                                     </div>
                                   </div>
+                                  <ModGodSite />
+                                  <InternetBanner />
 
                                   <About />
                                   <Projects />
