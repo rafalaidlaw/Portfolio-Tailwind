@@ -17,8 +17,8 @@ import Nubbin from "./components/Nubbin";
 const App = () => {
   return (
     <>
-      <div className="">
-        <div className="hidden md:block">
+      <div className="bg-orange-900 md:bg-transparent">
+        <div className="hidden  md:block ">
           <Rectangle />
         </div>
         <MatrixRainingCode />
