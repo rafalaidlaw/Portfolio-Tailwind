@@ -42,7 +42,7 @@ export const InternetBanner = () => {
         <div className="scale-50">
           <GridAd img={longWestAd} />
         </div>
-        <div className="grid grid-cols-3 gap-3 w-96 ">
+        <div className="grid grid-cols-3 gap-2 w-96 ">
           <GridAd img={gridAd1} />
           {/* <GridAd img={gridAd2} /> */}
           <GridAd img={gridAd3} />

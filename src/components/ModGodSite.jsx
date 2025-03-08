@@ -3,7 +3,7 @@ import React from "react";
 export const ModGodSite = () => {
   return (
     <div>
-      <article className=" hover:animate-box3">
+      <article className=" px-24 flex justify-center">
         <div className="border-b-2 border-orange-700 ">
           <div className="border-t-2 border-orange-500 ">
             <div className="border-l-2 border-orange-600 ">
