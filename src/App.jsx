@@ -56,11 +56,11 @@ const App = () => {
                                       <Skills className="bg-orange-400 " />
                                     </div>
                                   </div>
-                                  <ModGodSite />
+                                  <Projects />
+
                                   <InternetBanner />
 
                                   <About />
-                                  <Projects />
                                 </div>
                               </div>
                             </div>

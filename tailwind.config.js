@@ -92,6 +92,20 @@ export default {
             scale: "1",
           },
         },
+        box4: {
+          "0%": {
+            scale: "1",
+          },
+          "7%": {
+            scale: "1.4",
+          },
+          "70%": {
+            scale: "1.4",
+          },
+          "100%": {
+            scale: "1",
+          },
+        },
         slide: {
           "0%": {
             transform: "translateY(-25%)",
@@ -106,6 +120,7 @@ export default {
         box1: "box1 1s ease-in-out",
         box2: "box2 20s ease-in-out infinite",
         box3: "box3 20s ease-in-out infinite",
+        box4: "box4 20s ease-in-out infinite",
         slide: "slide .5s ease-in-out ",
         float: "float 3s ease-in-out infinite",
         pulse: "pulse 3s ease-in-out infinite",

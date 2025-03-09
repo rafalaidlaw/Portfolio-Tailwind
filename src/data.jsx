@@ -221,20 +221,20 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: "https://i.ibb.co/5LdTFhz/Retro-Mod-Site.gif",
+    img: "./src/assets/Retro_Mod_Site.gif",
     url: "https://cosmic-seahorse-cfa092.netlify.app/",
     github: "https://github.com/rafalaidlaw",
     title: "React E-Commerce Website",
     text: "My most recent project involved migrating my e-commerce business to a React and Google Firebase-based website, where I implemented modern web practices and ensured a seamless user experience across all devices. Additionally, I have a solid understanding of version control systems like Git.",
   },
-  {
-    id: nanoid(),
-    img: "https://i.ibb.co/jwD0g16/Rafa-Bale-Developer-Reel.gif",
-    url: "https://vimeo.com/950854029",
-    github: "https://github.com/rafalaidlaw",
-    title: "Internet Advertisments",
-    text: "These banner ads were built with Javascript. All movements, ease-outs, and effects.  We did this to save on memory and to quickly implement and update multiple iterations for evolving ad campaigns. With reusable and sustainable code we could create many ads with minor tweaks.",
-  },
+  // {
+  //   id: nanoid(),
+  //   img: "https://i.ibb.co/jwD0g16/Rafa-Bale-Developer-Reel.gif",
+  //   url: "https://vimeo.com/950854029",
+  //   github: "https://github.com/rafalaidlaw",
+  //   title: "Internet Advertisments",
+  //   text: "These banner ads were built with Javascript. All movements, ease-outs, and effects.  We did this to save on memory and to quickly implement and update multiple iterations for evolving ad campaigns. With reusable and sustainable code we could create many ads with minor tweaks.",
+  // },
   // {
   //   id: nanoid(),
   //   img: "https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800",

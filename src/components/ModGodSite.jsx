@@ -83,7 +83,7 @@ export const ModGodSite = () => {
                                                                                                                   to
                                                                                                                   build
                                                                                                                   the
-                                                                                                                  distrubution
+                                                                                                                  distribution
                                                                                                                   API.
                                                                                                                   React
                                                                                                                   Hook
