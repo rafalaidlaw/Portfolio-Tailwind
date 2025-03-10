@@ -225,7 +225,7 @@ export const projects = [
     url: "https://cosmic-seahorse-cfa092.netlify.app/",
     github: "https://github.com/rafalaidlaw",
     title: "React E-Commerce Website",
-    text: "My most recent project involved migrating my e-commerce business to a React and Google Firebase-based website, where I implemented modern web practices and ensured a seamless user experience across all devices. Additionally, I have a solid understanding of version control systems like Git.",
+    text: "Hover",
   },
   // {
   //   id: nanoid(),
