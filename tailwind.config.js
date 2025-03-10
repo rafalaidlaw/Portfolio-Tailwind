@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Monoton: ["Monoton", "sans-serif"],
+        Oswald: ["Oswald", "sans-serif"],
+        Caprasimo: ["Caprasimo", "sans-serif"],
+      },
+
       keyframes: {
         fadeIn: {
           from: { opacity: 0 },
@@ -97,10 +103,10 @@ export default {
             scale: "1",
           },
           "7%": {
-            scale: "1.4",
+            scale: "1.2",
           },
           "70%": {
-            scale: "1.4",
+            scale: "1.2",
           },
           "100%": {
             scale: "1",

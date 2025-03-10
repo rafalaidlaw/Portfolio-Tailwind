@@ -5,7 +5,7 @@ import StillImage from "../assets/Retro_Still_Image.png";
 const ProjectsCard = ({ url, img, github, title, text }) => {
   return (
     <a href={url}>
-      <div className="bg-orange-300 hover:bg-orange-100 hover:animate-box4 rounded-lg shadow-md block hover:shadow-xl">
+      <div className="bg-orange-300 hover:bg-orange-100 hover:animate-box4 rounded-lg shadow-md block hover:shadow-xl relative">
         <article className=" text-orange-700   duration-300">
           <img
             // src={img}
