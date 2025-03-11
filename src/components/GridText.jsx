@@ -4,7 +4,7 @@ export const GridText = ({ img }) => {
   return (
     <div>
       <article className="">
-        <div className="border-t-2 border-orange-200 ">
+        <div className="border-t-2 border-orange-200 bg-orange-300 ">
           <div className="border-l-2 border-orange-300 ">
             <div className="border-t-2 border-orange-200 ">
               <div className="border-l-2 border-orange-300 ">

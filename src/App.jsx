@@ -56,9 +56,12 @@ const App = () => {
                                       <Skills className="bg-orange-400 " />
                                     </div>
                                   </div>
-                                  <Projects />
-
-                                  <InternetBanner />
+                                  <div>
+                                    <Projects className="pb-4" />
+                                  </div>
+                                  <div>
+                                    <InternetBanner className="max-w-sm" />
+                                  </div>
 
                                   <About />
                                 </div>

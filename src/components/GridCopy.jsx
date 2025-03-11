@@ -24,13 +24,12 @@ export const GridCopy = ({ img }) => {
                                           Service work for Publicis and Tribal
                                           DDB implementing functional banner
                                           ads. Initially built with ActionScript
-                                          we moved to Javascript. Building ads
-                                          with iterable and reusable code saved
-                                          on memory and allowed for quick
-                                          implementation and updating multiple
-                                          iterations for evolving ad campaigns.
-                                          A good example of sustainable and
-                                          reusable code.
+                                          we moved to Javascript to meet
+                                          industry requirements. Building ads
+                                          with reusable code saved on memory and
+                                          allowed for quick production and
+                                          updating of multiple iterations for
+                                          evolving ad campaigns.
                                         </h1>
 
                                         <div>

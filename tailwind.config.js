@@ -95,10 +95,10 @@ export default {
             scale: "1",
           },
           "5%": {
-            scale: "1.4",
+            scale: "1.15",
           },
           "80%": {
-            scale: "1.4",
+            scale: "1.15",
           },
           "100%": {
             scale: "1",

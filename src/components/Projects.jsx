@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <div className="p-4">
       <div className="flex justify-center">
-        <div className="scale-75 pb-2 w-10/12">
-          <div className="grid grid-flow-col-dense pb-4 ">
+        <div className="scale-75  max-w-4xl pb-2 w-10/12">
+          <div className="grid grid-flow-col-dense pb-4">
             <RetroFont txt={"E"} />
             <RetroFont txt={"-"} />
             <RetroFont txt={"C"} />
@@ -33,7 +33,7 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-3 ">
-        <section className="col-span-2 align-element" id="projects">
+        <section className="col-span-2 align-element " id="projects">
           <div className="bg-orange-600 rounded-lg py-1 px-1 grid grid-flow-row">
             <div className="bg-orange-500 rounded-lg py-1 px-1">
               <div className="bg-orange-400 rounded-lg py-1 px-1">
@@ -221,7 +221,7 @@ const Projects = () => {
         </section>
       </div>
       <section className="p-5 flex justify-center" id="projects">
-        <div className="bg-orange-600 rounded-lg py-1 px-1 ">
+        <div className="bg-orange-600 rounded-lg py-1 px-1 max-w-5xl">
           <div className="bg-orange-400 rounded-lg py-1 px-1">
             <article className="bg-orange-200 rounded-lg ">
               <div className="  py-5 px-7 ">

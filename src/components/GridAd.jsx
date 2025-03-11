@@ -1,6 +1,6 @@
 import React from "react";
 
-export const GridAd = ({ img }) => {
+export const GridAd = ({ img, still }) => {
   return (
     <div>
       <article className=" p-1">
@@ -13,13 +13,20 @@ export const GridAd = ({ img }) => {
                     <div className="border-l-2 border-orange-600 ">
                       <div className="border-r-2 border-orange-600">
                         <div className="border-b-2 border-orange-700 ">
-                          <div className=" ">
-                            <div className="bg-orange-400 ">
-                              <img
-                                src={img}
-                                alt="Rafael in Packaging"
-                                className="opacity-0 hover:opacity-100"
-                              />
+                          <div className="border-t-2 border-orange-500 ">
+                            <div className=" relative">
+                              <div className="bg-orange-400 ">
+                                <img
+                                  src={still}
+                                  alt="Rafael in Packaging"
+                                  className="opacity-25 transition-opacity hover:opacity-0"
+                                />
+                                <img
+                                  src={img}
+                                  alt="Rafael in Packaging"
+                                  className="absolute top-0 left-0 opacity-0 w-full object-cover  transition-opacity hover:opacity-100 hover:animate-box3"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
