@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)",
+        ],
+      },
       fontFamily: {
         Monoton: ["Monoton", "sans-serif"],
         Oswald: ["Oswald", "sans-serif"],
@@ -88,11 +94,11 @@ export default {
           "0%": {
             scale: "1",
           },
-          "20%": {
-            scale: "2",
+          "5%": {
+            scale: "1.4",
           },
-          "70%": {
-            scale: "2",
+          "80%": {
+            scale: "1.4",
           },
           "100%": {
             scale: "1",
@@ -103,10 +109,10 @@ export default {
             scale: "1",
           },
           "5%": {
-            scale: "1.3",
+            scale: "1.35",
           },
           "70%": {
-            scale: "1.3",
+            scale: "1.35",
           },
           "100%": {
             scale: "1",

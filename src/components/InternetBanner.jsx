@@ -14,6 +14,7 @@ import boskAd from "../assets/boskAd.gif";
 import zooAd from "../assets/zooAd.gif";
 import bbWestAd from "../assets/bbWestAd.gif";
 import longWestAd from "../assets/longWestAd.gif";
+import GridCopy from "./GridCopy";
 
 import rogersSquare from "../assets/rogersSquare.gif";
 import GridAd from "./GridAd";
@@ -22,39 +23,86 @@ import GridText from "./GridText";
 
 export const InternetBanner = () => {
   return (
-    <div>
-      <div className="grid grid-flow-col">
-        <div className="">
-          <GridText />
-        </div>
-        <div className="scale-50">
-          <GridAdRogers img={rogersSquare} />
-        </div>
-        <div className="scale-90">
-          <GridAd img={boskAd} />
-        </div>
-        <div className="scale-50">
-          <GridAd img={zooAd} />
-        </div>
-        <div className="scale-50">
-          <GridAd img={bbWestAd} />
-        </div>
-        <div className="scale-50">
-          <GridAd img={longWestAd} />
-        </div>
-        <div className="grid grid-cols-3 gap-2 w-96 ">
-          <GridAd img={gridAd1} />
-          {/* <GridAd img={gridAd2} /> */}
-          <GridAd img={gridAd3} />
-          {/* <GridAd img={gridAd4} />
-        <GridAd img={gridAd5} /> */}
-          <GridAd img={gridAd6} />
-          <GridAd img={gridAd7} />
-          <GridAd img={gridAd8} />
-          <GridAd img={gridAd9} />
-          <GridAd img={gridAd10} />
-          <GridAd img={gridAd11} />
-          <GridAd img={gridAd5} />
+    <div className="flex justify-center lg:scale-95 xl:scale-125 xl:p-7">
+      <div className="xl:w-5/12">
+        <div className="grid grid-cols-11 gap-1 relative">
+          <div className="col-span-8 row-span-2 scale-y-110 pb-2.5">
+            <div className="flex justify-center">
+              <GridText />
+            </div>
+          </div>
+          <div>
+            <GridAd img={gridAd6} />
+          </div>
+
+          <div className="grid grid-row-3">
+            <div className="flex justify-center">
+              <GridAd img={gridAd7} />
+            </div>
+          </div>
+          <div className="row-span-4">
+            <div className="flex justify-end ">
+              <GridAd img={zooAd} className="" />
+            </div>
+            <div>
+              <div className="flex justify-center">
+                <GridAd img={gridAd5} />
+              </div>
+              <div className="flex justify-center">
+                <GridAd img={gridAd9} />
+              </div>
+              <div className="flex justify-center">
+                <GridAd img={gridAd1} />
+              </div>
+            </div>
+          </div>
+          <div className="col-span-2 row-span-4 ">
+            <div className="">
+              <GridAd img={bbWestAd} />
+            </div>
+            <div className="p-0.5">
+              <GridAd img={gridAd11} />
+            </div>
+          </div>
+          <div className="col-span-2 row-span-1">
+            <div className="flex justify-center">
+              <GridAd img={boskAd} />
+            </div>
+          </div>
+
+          <div className="col-span-6 row-span-2">
+            <div className="pb-1">
+              <GridAd img={longWestAd} />
+            </div>
+            <div className="">
+              <GridCopy />
+            </div>
+          </div>
+          <div className="col-span-2 row-span-2">
+            <div>
+              <GridAd img={rogersSquare} />
+            </div>
+            <div className="grid grid-cols-2 pt-1">
+              <div className="px-1">
+                <GridAd img={gridAd10} />
+              </div>
+              <div className="px-1">
+                <GridAd img={gridAd8} />
+              </div>
+            </div>
+          </div>
+          {/* <div className="grid grid-cols-3 col-span-6">
+            <div className="p-0.5">
+              <GridAd img={gridAd9} />
+            </div>
+
+            <div className="p-0.5">
+              <GridAd img={gridAd10} />
+            </div>
+            <div className="px-0.5 py-0.5">
+              <GridAd img={gridAd8} />
+            </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -225,11 +225,11 @@ const Projects = () => {
           <div className="bg-orange-400 rounded-lg py-1 px-1">
             <article className="bg-orange-200 rounded-lg ">
               <div className="  py-5 px-7 ">
-                <h2 className="text-lg text-center relative font-mono text-orange-600  tracking-wider drop-shadow">
-                  React storefront for a Toronto vendor. Google Firebasebase to
-                  create the distribution API. React-Hook-Form for building out
-                  the customer check out form, and integrates with Stripe for
-                  payment. Modern web practices to ensure a seamless user
+                <h2 className="text-lg text-center relative font-mono text-orange-500  tracking-wider drop-shadow">
+                  React storefront for local Toronto vendor. Google Firebasebase
+                  to create the distribution API. React-Hook-Form for building
+                  out the customer check out form, and integrates with Stripe
+                  for payment. Modern web practices to ensure a seamless user
                   experience across all devices. Additionally, it demonstrates a
                   solid understanding of version control systems, the ability to
                   scaffold out and bring to completion a fully realized product.
