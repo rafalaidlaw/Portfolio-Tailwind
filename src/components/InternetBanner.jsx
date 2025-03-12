@@ -36,7 +36,7 @@ import GridText from "./GridText";
 
 export const InternetBanner = () => {
   return (
-    <div className="flex justify-center">
+    <div className="pt-20 flex justify-center">
       <div className=" max-w-4xl scale-105">
         <div className="grid grid-cols-11 gap-1 relative">
           <div className="col-span-8 row-span-2 scale-y-110 pb-2.5">

@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <div className="">
-      <div className="p-8">
+      <div className="px-8">
         <section
           className="border-4 border-orange-800 bg-orange-300 rounded-3xl py-8"
           id="about"
