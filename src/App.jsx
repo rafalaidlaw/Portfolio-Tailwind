@@ -50,13 +50,13 @@ const App = () => {
                                 </div>
                                 <div className="  ">
                                   <div className="flex justify-center">
-                                    <div className="scale-95  animate-box  max-w-5xl">
+                                    <div className="scale-95  animate-box  ">
                                       <Hero className="bg-orange-400" />
 
                                       <Skills className="bg-orange-400 " />
                                     </div>
                                   </div>
-                                  <div>
+                                  <div className="max-w-6xl">
                                     <Projects className="pb-4" />
                                   </div>
                                   <div>
