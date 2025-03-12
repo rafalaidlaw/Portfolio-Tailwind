@@ -5,7 +5,7 @@ const About = () => {
     <div className="">
       <div className="p-8">
         <section
-          className="border-4 border-orange-800 bg-orange-300 rounded-3xl py-20"
+          className="border-4 border-orange-800 bg-orange-300 rounded-3xl py-8"
           id="about"
         >
           <div className="align-element grid  md:grid-cols-2 items-center gap-16">

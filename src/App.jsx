@@ -56,14 +56,19 @@ const App = () => {
                                       <Skills className="bg-orange-400 " />
                                     </div>
                                   </div>
-                                  <div className="max-w-6xl">
-                                    <Projects className="pb-4" />
+                                  <div className="flex justify-center">
+                                    <div className="max-w-6xl">
+                                      <Projects className="pb-4" />
+                                    </div>
                                   </div>
                                   <div>
                                     <InternetBanner className="max-w-sm" />
                                   </div>
-
-                                  <About />
+                                  <div className="flex justify-center">
+                                    <div className="max-w-6xl">
+                                      <About />
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
