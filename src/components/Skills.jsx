@@ -4,7 +4,7 @@ import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
   return (
-    <div className="bg-orange-400 border-b-2 border-orange-500 max-w-">
+    <div className="bg-orange-400 border-b-2 border-orange-500 max-w-7xl">
       <div className="border-r-2 border-orange-300">
         <div className="border-l-2 border-orange-300">
           <div className="border-b-2 border-orange-500">
