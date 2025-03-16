@@ -57,35 +57,21 @@ const Projects = () => {
             </div>
           </div>
         </section>
-        <section className="col-span-1" id="projects">
-          <div className="flex justify-center pb-4">
-            <h1 className="text-4xl font-Caprasimo tracking-wider text-orange-300 drop-shadow ">
-              MADE WITH
-            </h1>
-          </div>
-          <article className="grid grid-cols-3 gap-2 ">
-            <div className="bg-orange-600 rounded-lg py-1 px-1">
-              <div className="bg-orange-500 rounded-lg py-1 px-1">
-                <article className="bg-orange-400 rounded-lg px-2">
-                  <div className="flex justify-center">
-                    <div className="">
-                      <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                        REACT
-                      </h1>
-                      <div></div>
-                    </div>
-                  </div>
-                </article>
-              </div>
+        <div className="scale-75 md:scale-100">
+          <section className="col-span-1" id="projects ">
+            <div className="flex justify-center pb-4">
+              <h1 className="text-4xl font-Caprasimo tracking-wider text-orange-300 drop-shadow ">
+                MADE WITH
+              </h1>
             </div>
-            <div className="col-span-2">
+            <article className="grid grid-cols-3 gap-2 ">
               <div className="bg-orange-600 rounded-lg py-1 px-1">
                 <div className="bg-orange-500 rounded-lg py-1 px-1">
                   <article className="bg-orange-400 rounded-lg px-2">
                     <div className="flex justify-center">
                       <div className="">
                         <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                          TYPESCRIPT
+                          REACT
                         </h1>
                         <div></div>
                       </div>
@@ -93,15 +79,45 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-            </div>
-            <div className="col-span-2">
+              <div className="col-span-2">
+                <div className="bg-orange-600 rounded-lg py-1 px-1">
+                  <div className="bg-orange-500 rounded-lg py-1 px-1">
+                    <article className="bg-orange-400 rounded-lg px-2">
+                      <div className="flex justify-center">
+                        <div className="">
+                          <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
+                            TYPESCRIPT
+                          </h1>
+                          <div></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-2">
+                <div className="bg-orange-600 rounded-lg py-1 px-1">
+                  <div className="bg-orange-500 rounded-lg py-1 px-1">
+                    <article className="bg-orange-400 rounded-lg px-2">
+                      <div className="flex justify-center">
+                        <div className="">
+                          <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
+                            GRAPHQL
+                          </h1>
+                          <div></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
               <div className="bg-orange-600 rounded-lg py-1 px-1">
                 <div className="bg-orange-500 rounded-lg py-1 px-1">
                   <article className="bg-orange-400 rounded-lg px-2">
                     <div className="flex justify-center">
                       <div className="">
                         <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                          GRAPHQL
+                          HOOKS
                         </h1>
                         <div></div>
                       </div>
@@ -109,43 +125,13 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-            </div>
-            <div className="bg-orange-600 rounded-lg py-1 px-1">
-              <div className="bg-orange-500 rounded-lg py-1 px-1">
-                <article className="bg-orange-400 rounded-lg px-2">
-                  <div className="flex justify-center">
-                    <div className="">
-                      <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                        HOOKS
-                      </h1>
-                      <div></div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div className="bg-orange-600 rounded-lg py-1 px-1">
-              <div className="bg-orange-500 rounded-lg py-1 px-1">
-                <article className="bg-orange-400 rounded-lg px-2">
-                  <div className="flex justify-center">
-                    <div className="">
-                      <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                        STRIPE
-                      </h1>
-                      <div></div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div className="col-span-2">
               <div className="bg-orange-600 rounded-lg py-1 px-1">
                 <div className="bg-orange-500 rounded-lg py-1 px-1">
                   <article className="bg-orange-400 rounded-lg px-2">
                     <div className="flex justify-center">
                       <div className="">
                         <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                          FIREBASE
+                          STRIPE
                         </h1>
                         <div></div>
                       </div>
@@ -153,57 +139,29 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-            </div>
-            <div className="bg-orange-600 rounded-lg py-1 px-1">
-              <div className="bg-orange-500 rounded-lg py-1 px-1">
-                <article className="bg-orange-400 rounded-lg px-2">
-                  <div className="flex justify-center">
-                    <div className="">
-                      <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                        REDUX
-                      </h1>
-                      <div></div>
-                    </div>
+              <div className="col-span-2">
+                <div className="bg-orange-600 rounded-lg py-1 px-1">
+                  <div className="bg-orange-500 rounded-lg py-1 px-1">
+                    <article className="bg-orange-400 rounded-lg px-2">
+                      <div className="flex justify-center">
+                        <div className="">
+                          <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
+                            FIREBASE
+                          </h1>
+                          <div></div>
+                        </div>
+                      </div>
+                    </article>
                   </div>
-                </article>
+                </div>
               </div>
-            </div>
-            <div className="bg-orange-600 rounded-lg py-1 px-1">
-              <div className="bg-orange-500 rounded-lg py-1 px-1">
-                <article className="bg-orange-400 rounded-lg px-2">
-                  <div className="flex justify-center">
-                    <div className="">
-                      <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                        THUNK
-                      </h1>
-                      <div></div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div className="bg-orange-600 rounded-lg py-1 px-1">
-              <div className="bg-orange-500 rounded-lg py-1 px-1">
-                <article className="bg-orange-400 rounded-lg px-2">
-                  <div className="flex justify-center">
-                    <div className="">
-                      <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                        SAGA
-                      </h1>
-                      <div></div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div className="col-span-3">
               <div className="bg-orange-600 rounded-lg py-1 px-1">
                 <div className="bg-orange-500 rounded-lg py-1 px-1">
                   <article className="bg-orange-400 rounded-lg px-2">
                     <div className="flex justify-center">
                       <div className="">
                         <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
-                          REACT-HOOK-FORM
+                          REDUX
                         </h1>
                         <div></div>
                       </div>
@@ -211,12 +169,56 @@ const Projects = () => {
                   </article>
                 </div>
               </div>
-            </div>
-          </article>
-        </section>
+              <div className="bg-orange-600 rounded-lg py-1 px-1">
+                <div className="bg-orange-500 rounded-lg py-1 px-1">
+                  <article className="bg-orange-400 rounded-lg px-2">
+                    <div className="flex justify-center">
+                      <div className="">
+                        <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
+                          THUNK
+                        </h1>
+                        <div></div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div className="bg-orange-600 rounded-lg py-1 px-1">
+                <div className="bg-orange-500 rounded-lg py-1 px-1">
+                  <article className="bg-orange-400 rounded-lg px-2">
+                    <div className="flex justify-center">
+                      <div className="">
+                        <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
+                          SAGA
+                        </h1>
+                        <div></div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div className="col-span-3">
+                <div className="bg-orange-600 rounded-lg py-1 px-1">
+                  <div className="bg-orange-500 rounded-lg py-1 px-1">
+                    <article className="bg-orange-400 rounded-lg px-2">
+                      <div className="flex justify-center">
+                        <div className="">
+                          <h1 className="text-lg font-Monoton tracking-wider text-amber-200 drop-shadow">
+                            REACT-HOOK-FORM
+                          </h1>
+                          <div></div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
       </div>
-      <section className="p-5 flex justify-center" id="projects">
-        <div className="bg-orange-600 rounded-lg py-1 px-1 max-w-5xl">
+      <section className="md:p-5 flex justify-center ">
+        <div className="bg-orange-600 rounded-lg py-1 px-1  md:max-w-5xl max-w-96">
           <div className="bg-orange-400 rounded-lg py-1 px-1">
             <article className="bg-orange-200 rounded-lg ">
               <div className="  py-5 px-7 ">
