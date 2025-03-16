@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="p-4">
       <div className="flex justify-center">
-        <div className="scale-75  max-w-4xl pb-2 w-10/12">
+        <div className="scale-75  max-w-4xl pb-2 md:w-10/12">
           <div className="grid grid-flow-col-dense pb-4">
             <RetroFont txt={"E"} />
             <RetroFont txt={"-"} />
@@ -32,18 +32,13 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 ">
-        <section className="col-span-2 align-element " id="projects">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3  ">
+        <section className="md:col-span-2 align-element " id="projects">
           <div className="bg-orange-600 rounded-lg py-1 px-1 grid grid-flow-row">
             <div className="bg-orange-500 rounded-lg py-1 px-1">
               <div className="bg-orange-400 rounded-lg py-1 px-1">
                 <div className="bg-orange-300 rounded-lg  py-1 px-1">
                   <article className="bg-orange-200 rounded-lg ">
-                    {/* <div className="border-b border-orange-500  pb-5 ">
-                    <h2 className="text-lg text-center relative font-mono text-orange-600  tracking-wider drop-shadow">
-                      Portfolio
-                    </h2>
-                  </div> */}
                     <div className="flex justify-center">
                       <div className="pt-5 grid md:grid-cols-1 w-11/12">
                         {projects.map((project) => {
