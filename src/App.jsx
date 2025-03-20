@@ -11,6 +11,7 @@ import TitleBottomCap from "./components/TitleBottomCap";
 import NavBottomCap from "./components/NavBottomCap";
 import MatrixRainingCode from "./components/MatrixRainingCode";
 import InternetBanner from "./components/InternetBanner";
+import InternetBannerSMALL from "./components/InternetBannerSMALL";
 import ModGodSite from "./components/ModGodSite";
 
 import Nubbin from "./components/Nubbin";
@@ -61,8 +62,11 @@ const App = () => {
                                       <Projects className="pb-4" />
                                     </div>
                                   </div>
-                                  <div>
+                                  <div className="hidden md:block">
                                     <InternetBanner className="max-w-sm" />
+                                  </div>
+                                  <div className="md:hidden block">
+                                    <InternetBannerSMALL />
                                   </div>
                                   <div className="flex justify-center">
                                     <div className="max-w-6xl">
