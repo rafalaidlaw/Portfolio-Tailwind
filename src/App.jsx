@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import Top from "./components/Top";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
+import Skills from "./components/skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -87,7 +87,9 @@ const App = () => {
             </div>
           </div>
         </div>
-        <FooterBottomCap />
+        <div className=" pb-5 md:hidden md:pb-0">
+          <FooterBottomCap />
+        </div>
         <Footer />
       </div>
     </>
