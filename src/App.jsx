@@ -9,6 +9,7 @@ import Title from "./components/Title";
 import Rectangle from "./components/Rectangle";
 import TitleBottomCap from "./components/TitleBottomCap";
 import NavBottomCap from "./components/NavBottomCap";
+import FooterBottomCap from "./components/FooterBottomCap";
 import MatrixRainingCode from "./components/MatrixRainingCode";
 import InternetBanner from "./components/InternetBanner";
 import InternetBannerSMALL from "./components/InternetBannerSMALL";
@@ -86,6 +87,7 @@ const App = () => {
             </div>
           </div>
         </div>
+        <FooterBottomCap />
         <Footer />
       </div>
     </>

@@ -25,7 +25,7 @@ export const skills = [
     id: nanoid(),
     title: "React",
     icon: <FaReact className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
   {
     id: nanoid(),
@@ -35,7 +35,7 @@ export const skills = [
         <path d="M177.381 169.733c9.447-.978 16.614-9.122 16.288-18.896-.325-9.773-8.47-17.592-18.243-17.592h-.651c-10.1.326-17.918 8.796-17.592 18.895.326 4.887 2.28 9.122 5.212 12.054-11.076 21.828-28.016 37.791-53.426 51.148-17.266 9.122-35.183 12.38-53.1 10.1-14.66-1.955-26.062-8.47-33.23-19.222-10.424-15.963-11.401-33.23-2.605-50.496 6.19-12.38 15.962-21.502 22.152-26.063-1.303-4.235-3.258-11.402-4.235-16.614-47.237 34.207-42.35 80.468-28.016 102.295 10.75 16.29 32.577 26.389 56.684 26.389 6.515 0 13.03-.652 19.546-2.28 41.699-8.145 73.299-32.905 91.216-69.718zm57.336-40.397c-24.759-28.995-61.245-44.958-102.944-44.958h-5.212c-2.932-5.864-9.122-9.774-15.963-9.774h-.652C99.848 74.93 92.03 83.4 92.355 93.5c.326 9.773 8.47 17.592 18.243 17.592h.651c7.167-.326 13.357-4.887 15.963-11.077h5.864c24.759 0 48.214 7.167 69.39 21.176 16.288 10.751 28.016 24.76 34.531 41.7 5.538 13.683 5.212 27.04-.652 38.443-9.121 17.266-24.432 26.714-44.63 26.714-13.031 0-25.41-3.91-31.926-6.842-3.583 3.258-10.099 8.47-14.66 11.729 14.009 6.515 28.343 10.099 42.025 10.099 31.274 0 54.404-17.267 63.2-34.533 9.447-18.896 8.795-51.474-15.637-79.165zM69.225 175.27c.326 9.774 8.47 17.592 18.243 17.592h.652c10.099-.325 17.917-8.796 17.591-18.895-.325-9.774-8.47-17.592-18.243-17.592h-.651c-.652 0-1.63 0-2.28.325-13.357-22.153-18.895-46.26-16.94-72.323 1.302-19.547 7.818-36.488 19.22-50.497 9.447-12.054 27.69-17.918 40.07-18.243 34.531-.652 49.19 42.351 50.168 59.618 4.235.977 11.402 3.258 16.289 4.887C189.434 27.366 156.857 0 125.584 0c-29.32 0-56.359 21.176-67.11 52.451-14.985 41.7-5.212 81.771 13.031 113.372-1.628 2.28-2.606 5.864-2.28 9.448z" />
       </svg>
     ),
-    text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
+    text: "Redux, effectively managing and centralizing application state to streamline data flow and enhance performance in complex React applications.",
   },
   {
     id: nanoid(),
@@ -45,13 +45,13 @@ export const skills = [
         <path d="M5 4a1 1 0 0 0-1 1v40a1 1 0 0 0 1 1h40a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5zm1 2h38v38H6V6zm9 17v3.445h5V42h4V26.445h5V23H15zm21.691.01c-3.114-.013-6.673.931-6.673 5.314 0 5.73 7.72 5.732 7.72 8.317 0 .245.104 2.025-2.62 2.025-2.726 0-4.997-1.713-4.997-1.713v4.158s11.881 3.843 11.881-4.822c-.001-5.625-7.793-5.344-7.793-8.139 0-1.083.77-2.095 2.9-2.095 2.131 0 4.018 1.258 4.018 1.258l.14-3.706s-2.153-.588-4.576-.597z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "TypeScript, leveraging static typing to enhance code quality, improve maintainability, and prevent runtime errors in large-scale applications.",
   },
   {
     id: nanoid(),
     title: "NodeJs",
     icon: <FaNodeJs className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Node.js, building scalable and high-performance server-side applications with a focus on asynchronous programming and efficient resource management.",
   },
   {
     id: nanoid(),
@@ -61,7 +61,7 @@ export const skills = [
         <path d="M3.89 15.673 6.255.461A.542.542 0 0 1 7.27.289L9.813 5.06 3.89 15.673zm16.795 3.691L18.433 5.365a.543.543 0 0 0-.918-.295l-14.2 14.294 7.857 4.428a1.62 1.62 0 0 0 1.587 0l7.926-4.428zM14.3 7.148l-1.82-3.482a.542.542 0 0 0-.96 0L3.53 17.984 14.3 7.148z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Firebase, utilizing its real-time database, authentication, and cloud functions to build scalable, secure, and seamless web and mobile applications.",
   },
   {
     id: nanoid(),
@@ -71,7 +71,7 @@ export const skills = [
         <path d="M25 2c-.715 0-1.43.18-2.066.54L6.09 12.003A4.066 4.066 0 0 0 4 15.535v18.93c0 1.453.8 2.808 2.09 3.531l16.844 9.465c.636.36 1.351.539 2.066.539.715 0 1.43-.18 2.066-.54L43.91 38A4.077 4.077 0 0 0 46 34.465v-18.93c0-1.453-.8-2.808-2.09-3.531L27.066 2.539A4.206 4.206 0 0 0 25 2Zm0 11c3.781 0 7.277 1.754 9.543 4.738l-4.383 2.54A6.993 6.993 0 0 0 25 18c-3.86 0-7 3.14-7 7s3.14 7 7 7a6.993 6.993 0 0 0 5.16-2.277l4.383 2.539A11.933 11.933 0 0 1 25 37c-6.617 0-12-5.383-12-12s5.383-12 12-12Zm10 7h2v2h2v-2h2v2h2v2h-2v2h2v2h-2v2h-2v-2h-2v2h-2v-2h-2v-2h2v-2h-2v-2h2Zm2 4v2h2v-2Z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "C# with Unity, creating immersive and high-performance games by leveraging object-oriented programming and Unity's powerful game development tools.",
   },
   {
     id: nanoid(),
@@ -84,13 +84,13 @@ export const skills = [
         <path d="m160 203.221 96-55.424V73.9l-32 18.474v36.95l-64 36.949v36.95Zm64-147.797v-36.95L256 0v36.95l-32 18.474Z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Material-UI to designing sleek, responsive, and accessible user interfaces with a focus on consistent design patterns and a seamless user experience.",
   },
   {
     id: nanoid(),
     title: "Sass",
     icon: <FaSass className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Sass, streamlining CSS workflows by utilizing variables, mixins, and nesting to create clean, maintainable, and scalable stylesheets.",
   },
 
   {
@@ -101,21 +101,21 @@ export const skills = [
         <path d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Tailwind CSS, rapidly building custom, responsive, and utility-first designs with a focus on flexibility and efficient styling.",
   },
 
   {
     id: nanoid(),
     title: "Angular",
     icon: <FaAngular className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Angular, developing dynamic, single-page applications with a strong emphasis on modular architecture, two-way data binding, and seamless user interactions.",
   },
 
   {
     id: nanoid(),
     title: "Javascript",
     icon: <FaJs className="hover-icon" />,
-    text: "Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality",
+    text: "JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality",
   },
   {
     id: nanoid(),
@@ -125,7 +125,7 @@ export const skills = [
         <path d="M499.161 364.63s-63.554 171.386-282.354 131.488c-3.443-.641-6.745-1.838-10.089-2.849-.782-.229-1.572-.479-2.354-.703a302.903 302.903 0 0 1-9.769-3.197c-.37-.129-.723-.25-1.098-.383a326.662 326.662 0 0 1-8.762-3.244c-.757-.295-1.51-.582-2.263-.89a273.273 273.273 0 0 1-9.277-3.859c-.565-.249-1.11-.499-1.684-.752a317.762 317.762 0 0 1-7.959-3.685c-.682-.346-1.368-.666-2.055-.99-.374-.187-.777-.374-1.16-.565-1.696-.848-3.352-1.729-5.023-2.604-1.289-.665-2.599-1.313-3.88-2a329.103 329.103 0 0 1-7.02-3.938c-.861-.491-1.73-.965-2.583-1.46a332.068 332.068 0 0 1-9.344-5.727c-.869-.557-1.729-1.147-2.586-1.722-2.004-1.297-4.009-2.595-5.972-3.95-.208-.142-.407-.291-.611-.437-.761-.516-1.484-1.044-2.241-1.593a266.52 266.52 0 0 1-6.15-4.408 512.55 512.55 0 0 1-2.932-2.229 321.13 321.13 0 0 1-5.481-4.284c-.902-.723-1.817-1.438-2.719-2.17a341.36 341.36 0 0 1-6.575-5.548c-.408-.357-.84-.707-1.256-1.081-.042-.017-.071-.05-.117-.088a271.49 271.49 0 0 1-7.236-6.591c-.719-.657-1.435-1.36-2.158-2.05a314.61 314.61 0 0 1-5.277-5.178c-.72-.707-1.431-1.422-2.121-2.138a323.508 323.508 0 0 1-6.616-6.97c-.079-.107-.158-.17-.253-.274-.038-.041-.092-.096-.129-.142a305.821 305.821 0 0 1-6.508-7.427 228.322 228.322 0 0 1-1.78-2.133 331.47 331.47 0 0 1-4.674-5.743 360.112 360.112 0 0 1-1.9-2.42 257.465 257.465 0 0 1-5.057-6.721c-.308-.424-.636-.84-.932-1.256a1.41 1.41 0 0 1-.158-.216 283.24 283.24 0 0 1-5.547-8.001c-.561-.824-1.089-1.672-1.63-2.521a240.738 240.738 0 0 1-3.826-5.988c-.648-1.031-1.264-2.066-1.888-3.103a243.51 243.51 0 0 1-3.298-5.655c-.611-1.073-1.214-2.121-1.805-3.223-.329-.582-.686-1.182-1.006-1.792-.562-1.016-1.069-2.075-1.618-3.111-.848-1.626-1.709-3.26-2.528-4.915C-6.655 275.1-12.294 190.5 32.95 125.471l35.314-44.789c-39.843 77.007-21.936 170.778 27.908 238.76 1.8 2.475 3.643 4.916 5.526 7.356.583.736 1.168 1.477 1.751 2.184a284.177 284.177 0 0 0 4.786 5.918c.583.686 1.152 1.359 1.747 2.066a252.343 252.343 0 0 0 6.646 7.564c.108.12.212.229.316.345a303.605 303.605 0 0 0 6.558 6.933c.69.698 1.393 1.389 2.096 2.088a206.2 206.2 0 0 0 5.344 5.235c.686.682 1.376 1.339 2.088 2.017a358.359 358.359 0 0 0 7.435 6.758c.262.229.532.44.773.652a336.406 336.406 0 0 0 7.074 5.96c.832.678 1.68 1.355 2.528 2.029a287.085 287.085 0 0 0 5.681 4.437c.911.699 1.846 1.41 2.791 2.108a342.403 342.403 0 0 0 6.288 4.55c.719.486 1.418 1.015 2.146 1.505a237.617 237.617 0 0 0 6.654 4.425c.84.558 1.672 1.14 2.52 1.681a337.537 337.537 0 0 0 9.357 5.73c.811.466 1.622.902 2.42 1.352a246.141 246.141 0 0 0 7.19 4.029c1.314.731 2.666 1.393 3.996 2.096 1.988 1.023 3.976 2.063 5.988 3.044.761.374 1.501.724 2.246 1.077a371.386 371.386 0 0 0 7.743 3.605c.616.267 1.214.545 1.834.811 3.032 1.327 6.096 2.6 9.186 3.817.794.316 1.589.62 2.387.937a295.645 295.645 0 0 0 8.508 3.156c.445.158.89.32 1.322.478a291.045 291.045 0 0 0 9.648 3.136c.827.258 1.655.508 2.503.757 3.318.981 6.616 2.042 10.018 2.812 89.773 20.431 184.517 2.083 237.895-67.46zM182.44 254.758c4.907 7.024 10.338 15.386 16.846 21.031 2.354 2.598 4.824 5.13 7.34 7.621.632.648 1.285 1.272 1.938 1.908a215.525 215.525 0 0 0 7.494 6.97c.108.079.204.188.308.263.029.033.054.041.075.074 2.845 2.487 5.781 4.887 8.758 7.244.662.508 1.318 1.036 1.988 1.552 2.99 2.291 6.039 4.545 9.166 6.69.096.066.17.134.266.2 1.376.956 2.782 1.846 4.175 2.761.674.433 1.31.898 1.983 1.306a185.394 185.394 0 0 0 6.795 4.167c.325.2.641.366.961.553a250.168 250.168 0 0 0 6.005 3.356c.698.391 1.414.74 2.129 1.114 1.389.724 2.786 1.468 4.2 2.171.212.1.433.199.637.287a199.91 199.91 0 0 0 8.762 4.079c.632.283 1.289.532 1.934.799a224.016 224.016 0 0 0 7.178 2.915c1.022.387 2.059.757 3.073 1.127 2.191.815 4.383 1.556 6.595 2.296 1.003.319 1.984.648 2.986.956 3.144.973 6.254 2.212 9.535 2.753C472.501 366.942 511.5 236.873 511.5 236.873c-35.16 50.633-103.243 74.791-175.897 55.936a209.508 209.508 0 0 1-9.56-2.77 96.802 96.802 0 0 1-2.883-.928 197.877 197.877 0 0 1-6.694-2.308c-1.011-.37-2.025-.74-3.02-1.123a228.945 228.945 0 0 1-7.198-2.902c-.653-.283-1.306-.533-1.942-.824a201.833 201.833 0 0 1-8.812-4.094c-1.493-.729-2.953-1.499-4.425-2.254l-2.549-1.312a213.673 213.673 0 0 1-5.594-3.154c-.437-.252-.894-.491-1.339-.755a228.56 228.56 0 0 1-6.77-4.134c-.687-.438-1.352-.915-2.038-1.366a239.846 239.846 0 0 1-4.392-2.902c-3.11-2.146-6.138-4.399-9.128-6.678-.69-.543-1.376-1.073-2.059-1.616-31.796-25.111-57-59.423-68.994-98.33-12.555-40.352-9.847-85.647 11.914-122.406l-26.735 37.738c-32.715 47.085-30.939 110.113-5.419 159.91 4.286 8.349 9.097 16.445 14.474 24.157zm178.06-58.252c1.393.52 2.782.981 4.191 1.458.616.189 1.231.401 1.851.584 1.988.626 3.963 1.352 6.018 1.738 93.284 18.023 118.58-47.869 125.317-57.566-22.165 31.91-59.405 39.57-105.111 28.481-3.605-.881-7.572-2.185-11.058-3.416a135.451 135.451 0 0 1-13.124-5.456 136.046 136.046 0 0 1-23.025-14.045c-40.891-31.029-66.291-90.221-39.61-138.425L291.51 29.76c-19.287 28.386-21.179 63.638-7.801 94.991 14.114 33.274 43.036 59.381 76.791 71.755z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "jQuery, efficiently manipulating DOM elements, handling events, and creating interactive web features to enhance user experience and functionality.",
   },
   {
     id: nanoid(),
@@ -137,27 +137,27 @@ export const skills = [
         <path d="M30 16.623c-1.918 0-2.11 1.151-2.11 1.918a15.68 15.68 0 0 0 .192 2.11 15.738 15.738 0 0 1 .192 2.205c0 2.685-1.63 3.644-3.836 3.644h-.575v-1.438h.479c1.438 0 2.11-.863 2.11-2.3a13 13 0 0 0-.192-1.918 14.306 14.306 0 0 1-.192-2.014c0-1.726.767-2.589 1.918-2.877v-.1c-1.151-.288-1.918-1.151-1.918-2.877a14.306 14.306 0 0 1 .192-2.014 13 13 0 0 0 .192-1.918c0-1.438-.575-2.205-2.11-2.3h-.479V5.4h.575c2.205 0 3.836 1.055 3.836 3.452a17.119 17.119 0 0 1-.192 2.205 17.119 17.119 0 0 0-.192 2.205c0 .959.288 1.918 2.11 1.918Z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "ActionScript, developing rich multimedia applications and interactive content with a focus on performance and seamless integration within Flash-based environments.",
   },
 
   {
     id: nanoid(),
     title: "Git",
     icon: <FaGit className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Git, managing version control, collaborating effectively in team environments, and ensuring seamless code integration through branching, merging, and conflict resolution.",
   },
   {
     id: nanoid(),
     title: "Markdown",
     icon: <FaMarkdown className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Markdown, creating clean, easy-to-read, and structured documentation, ensuring content is both accessible and well-organized for developers and end-users alike.",
   },
 
   {
     id: nanoid(),
     title: "Bootstrap",
     icon: <FaBootstrap className="hover-icon" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Bootstrap, rapidly building responsive and mobile-first websites with pre-designed components and flexible grid systems for consistent and efficient front-end development.",
   },
 
   {
@@ -168,13 +168,13 @@ export const skills = [
         <path d="M204.064 46.682V68.7h-56.302V.501h56.302v24.13h-32.172v22.051h32.172zm57.877-22.051h22.492V.501h-56.308v24.13c7.533 7.533 11.461 11.139 22.356 22.034-6.369 0-22.356.022-22.356.021V68.7h56.308V46.682l-22.492-22.051zm79.805 0h22.49V.501H307.93v24.13c7.531 7.533 11.461 11.139 22.355 22.034-6.365 0-22.355.022-22.355.021V68.7h56.307V46.682l-22.491-22.051zm96.649 76.481-34.203 370.486-148.193 39.9-148.196-39.9-34.198-370.486h364.79zm-68.918 75.332H140.245l5.529 44.739H262.049l-6.184 2.574-106.067 44.177 3.518 43.73 102.549.333 54.963.175-3.521 58.311-51.442 14.484v-.046l-.422.116-49.684-12.542-3.015-36.195h-46.411l6.032 69.876 93.5 27.649v-.05l.168.05 93-27.146L361.1 267.935H255.605l.26-.112 109.086-46.639 4.526-44.74z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "CSS and Flexbox, creating responsive, modern layouts with efficient and flexible design structures to ensure seamless user experiences across devices.",
   },
   {
     id: nanoid(),
     title: "HTML5",
     icon: <FaHtml5 className="hover-icon" />,
-    text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
+    text: "HTML5, structuring semantic, accessible, and SEO-friendly web pages while leveraging modern elements and APIs for enhanced functionality and performance.",
   },
   {
     id: nanoid(),
@@ -193,7 +193,7 @@ export const skills = [
         </svg>
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "GraphQL, designing efficient, flexible APIs that enable precise data fetching and improve performance by reducing over-fetching and under-fetching of data.",
   },
   {
     id: nanoid(),
@@ -204,7 +204,7 @@ export const skills = [
         <path d="M239.257 240.926c-.692-.165-1.268-.544-1.729-1.136a3.597 3.597 0 0 1-.642-2.075c0-.593.23-1.054.691-1.383a1.696 1.696 0 0 1 1.581-.198 20.79 20.79 0 0 0 6.619 1.087c2.305 0 3.985-.708 5.038-2.124 1.087-1.416 1.631-3.836 1.631-7.261v-19.907c0-.757.279-1.416.839-1.976.56-.559 1.219-.839 1.976-.839h.049c.758 0 1.417.28 1.976.839.56.56.84 1.219.84 1.976v21.389c0 4.314-.988 7.458-2.964 9.434-1.976 1.943-5.104 2.915-9.385 2.915-2.338 0-4.511-.247-6.52-.741ZM277.109 225.119c-3.754-1.284-6.471-2.816-8.151-4.594-1.646-1.811-2.469-3.984-2.469-6.52 0-2.898.922-5.187 2.766-6.866 1.844-1.68 4.38-2.519 7.607-2.519 3.029 0 5.697.362 8.002 1.086.692.231 1.251.675 1.679 1.334.462.626.692 1.334.692 2.124 0 .56-.247.988-.741 1.284a1.582 1.582 0 0 1-1.531.099c-2.503-1.054-5.039-1.581-7.607-1.581-1.778 0-3.145.445-4.1 1.334-.955.889-1.433 2.124-1.433 3.705 0 1.284.445 2.453 1.334 3.507.889 1.021 2.206 1.828 3.952 2.42 4.347 1.449 7.36 3.063 9.039 4.841 1.713 1.778 2.569 4.034 2.569 6.767 0 3.326-1.021 5.846-3.063 7.558-2.041 1.712-5.055 2.569-9.039 2.569-2.602 0-4.956-.395-7.064-1.186-1.548-.626-2.321-1.844-2.321-3.655 0-.56.247-.972.741-1.235a1.489 1.489 0 0 1 1.481 0c2.042 1.087 4.265 1.63 6.669 1.63 4.775 0 7.162-1.893 7.162-5.681 0-1.448-.477-2.683-1.432-3.704-.922-1.021-2.503-1.927-4.742-2.717ZM319.179 212.622c-1.811-2.371-4.396-3.557-7.755-3.557s-5.961 1.186-7.805 3.557c-1.811 2.338-2.717 5.845-2.717 10.521 0 4.676.906 8.2 2.717 10.571 1.844 2.338 4.446 3.507 7.805 3.507s5.944-1.169 7.755-3.507c1.844-2.371 2.766-5.895 2.766-10.571s-.922-8.183-2.766-10.521Zm3.952 24.154c-2.865 3.261-6.768 4.891-11.707 4.891-4.94 0-8.859-1.63-11.757-4.891-2.865-3.26-4.297-7.804-4.297-13.633 0-5.829 1.432-10.373 4.297-13.633 2.898-3.26 6.817-4.89 11.757-4.89 4.939 0 8.842 1.63 11.707 4.89 2.897 3.26 4.346 7.804 4.346 13.633 0 5.829-1.449 10.373-4.346 13.633ZM340.352 240.382c-.527.527-1.153.791-1.877.791-.725 0-1.351-.264-1.877-.791-.527-.527-.791-1.152-.791-1.877v-30.724c0-.724.264-1.35.791-1.877.526-.527 1.152-.79 1.877-.79 1.745 0 3.079.773 4.001 2.321l14.028 24.55c0 .033.033.049.099.049.033 0 .049-.016.049-.049v-24.204c0-.724.264-1.35.791-1.877.527-.527 1.152-.79 1.877-.79.724 0 1.35.263 1.877.79.527.527.79 1.153.79 1.877v30.724c0 .725-.263 1.35-.79 1.877-.527.527-1.153.791-1.877.791-1.746 0-3.079-.774-4.001-2.322l-14.078-24.55c0-.033-.017-.049-.05-.049s-.049.016-.049.049v24.204c0 .725-.263 1.35-.79 1.877Z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "JSON, efficiently structuring and manipulating data for seamless communication between APIs, databases, and web applications.",
   },
   {
     id: nanoid(),
@@ -214,7 +214,7 @@ export const skills = [
         <path d="m20.42 21.157 2.211 2.211L30 16l-7.369-7.369-2.211 2.212L25.58 16ZM11.58 10.843 9.369 8.631 2 16l7.369 7.369 2.211-2.211L6.42 16ZM17.411 7.677l1.6.437-4.42 16.209-1.6-.437 4.42-16.209Z" />
       </svg>
     ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "XML, structuring and managing hierarchical data for data interchange and integration across systems, ensuring compatibility and maintainability in web and enterprise applications.",
   },
 ];
 
