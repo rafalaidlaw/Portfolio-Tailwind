@@ -12,7 +12,14 @@ const Skills = () => {
     console.log(this);
   };
   return (
-    <div className="bg-orange-300 border-b-2 border-orange-500 max-w-7xl">
+    <div
+      className="bg-orange-300 border-b-2 border-orange-500 max-w-7xl"
+      onMouseLeave={() =>
+        handleClick(
+          "These are the languages I have worked in. Click icon for more info."
+        )
+      }
+    >
       <div className="border-r-2 border-orange-300">
         <div className="border-l-2 border-orange-300">
           <div className="border-b-2 border-orange-500">
