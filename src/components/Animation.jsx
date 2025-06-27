@@ -40,8 +40,8 @@ const Animation = () => {
   // Memoized gradient styles for better performance
   const gradientStyle = useMemo(() => ({
     background: isBlueTheme 
-      ? 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(59,130,246,0.85) 45%, rgba(147,197,253,0.95) 75%, rgba(59,130,246,1) 100%)'
-      : 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(251,146,60,0.85) 45%, rgba(253,186,116,0.95) 75%, rgba(251,146,60,1) 100%)'
+      ? 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(59,130,246,0.3) 45%, rgba(147,197,253,0.85) 75%, rgba(59,130,246,1) 100%)'
+      : 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(251,146,60,0.3) 45%, rgba(253,186,116,0.85) 75%, rgba(251,146,60,1) 100%)'
   }), [isBlueTheme]);
 
   // Memoized neon colors for better performance
@@ -148,7 +148,7 @@ const Animation = () => {
 
       {/* Main Animation Section */}
       <section
-        className={`relative rounded-b-3xl pt-32 pb-8 mb-12 shadow-2xl overflow-hidden ${colors.bg[400]} transition-all duration-300`}
+        className={`relative rounded-b-3xl pt-32 pb-8 mb-12 shadow-2xl overflow-hidden transition-all duration-300`}
         id="animation"
       >
         {/* Section Title */}
