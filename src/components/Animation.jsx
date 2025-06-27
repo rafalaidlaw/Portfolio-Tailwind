@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import SectionTitle from "./SectionTitle";
 import shadowSvg from "../assets/shadow.svg"; // Subtle overlay for animation effect
 import wayGif from "../assets/way-gif-refactored.gif";
@@ -7,6 +7,7 @@ import atticCover from "../assets/attic-cover-sprite.png";
 import atticGif from "../assets/attic-gif-export.gif";
 import animGif from "../assets/anim-gif-download-export.gif";
 import animDemoSprite from "../assets/anim-demo-sprite.png";
+import { useTheme } from "../context/ThemeContext";
 
 // Sample data for animation projects
 const animationProjects = [
@@ -31,71 +32,157 @@ const animationProjects = [
 ];
 
 const Animation = () => {
+  const { colors, isBlueTheme } = useTheme();
   const [activeVideo, setActiveVideo] = useState(animationProjects[0]);
   const [hoveredIdx, setHoveredIdx] = useState(null);
   const [shouldAutoplay, setShouldAutoplay] = useState(false);
 
-  // Helper to get video URL with autoplay if needed
-  const getVideoUrl = (project, idx) => {
+  // Memoized gradient styles for better performance
+  const gradientStyle = useMemo(() => ({
+    background: isBlueTheme 
+      ? 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(59,130,246,0.85) 45%, rgba(147,197,253,0.95) 75%, rgba(59,130,246,1) 100%)'
+      : 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(251,146,60,0.85) 45%, rgba(253,186,116,0.95) 75%, rgba(251,146,60,1) 100%)'
+  }), [isBlueTheme]);
+
+  // Memoized neon colors for better performance
+  const neonColors = useMemo(() => ({
+    primary: isBlueTheme ? '#60a5fa' : '#ffb347',
+    secondary: isBlueTheme ? '#2563eb' : '#ff8008'
+  }), [isBlueTheme]);
+
+  // Optimized video URL helper with useCallback
+  const getVideoUrl = useCallback((project, idx) => {
     if (!shouldAutoplay) return project.video;
+    
+    const baseUrl = project.video;
+    const hasParams = baseUrl.includes("?");
+    const separator = hasParams ? "&" : "?";
+    
     if (project.type === "youtube") {
       // Special case: third card (index 2) should start at 3 seconds
       if (idx === 2) {
-        return project.video.includes("?")
-          ? project.video + "&autoplay=1&start=3"
-          : project.video + "?autoplay=1&start=3";
+        return `${baseUrl}${separator}autoplay=1&start=3`;
       }
-      // Add or replace autoplay=1
-      return project.video.includes("?")
-        ? project.video + "&autoplay=1"
-        : project.video + "?autoplay=1";
+      return `${baseUrl}${separator}autoplay=1`;
     } else if (project.type === "vimeo") {
-      return project.video.includes("?")
-        ? project.video + "&autoplay=1"
-        : project.video + "?autoplay=1";
+      return `${baseUrl}${separator}autoplay=1`;
     }
-    return project.video;
-  };
+    return baseUrl;
+  }, [shouldAutoplay]);
+
+  // Optimized card hover handlers
+  const handleCardHover = useCallback((project, idx) => {
+    setActiveVideo(project);
+    setHoveredIdx(idx);
+    setShouldAutoplay(false);
+  }, []);
+
+  const handleCardLeave = useCallback(() => {
+    setHoveredIdx(null);
+  }, []);
+
+  const handleCardClick = useCallback(() => {
+    setShouldAutoplay(true);
+  }, []);
+
+  // Memoized card image source
+  const getCardImage = useCallback((idx) => {
+    if (hoveredIdx === idx) {
+      return idx === 0 ? atticGif : idx === 1 ? animGif : wayGif;
+    }
+    return idx === 0 ? atticCover : idx === 1 ? animDemoSprite : wayCover;
+  }, [hoveredIdx]);
 
   return (
     <div className="px-8 relative scale-90">
-      {/* Import Neonderthaw font from Google Fonts */}
+      {/* Import fonts from Google Fonts */}
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+          
+          /* Custom CSS variables for theme colors */
+          :root {
+            --neon-primary: ${neonColors.primary};
+            --neon-secondary: ${neonColors.secondary};
+            --gradient-overlay: ${gradientStyle.background};
+          }
+          
+          /* Enhanced neon flicker animation with theme-aware colors */
+          @keyframes neon-flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+              text-shadow:
+                0 0 12px var(--neon-primary),
+                0 0 32px var(--neon-primary),
+                0 0 64px var(--neon-secondary),
+                0 0 128px var(--neon-secondary);
+              opacity: 1;
+            }
+            20%, 22%, 24%, 55% {
+              text-shadow: none;
+              opacity: 0.7;
+            }
+          }
+          
+          .neon-flicker {
+            color: var(--neon-primary);
+            animation: neon-flicker 2.5s infinite;
+          }
+          
+          /* Enhanced card hover effects */
+          .animation-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          
+          .animation-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          }
+          
+          /* Smooth theme transitions */
+          * {
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+          }
+        `}
       </style>
-      {/* Import Tilt Prism font from Google Fonts */}
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
-      </style>
-      {/* Glowing/animated SectionTitle above the section */}
+
+      {/* Main Animation Section */}
       <section
-        className="relative rounded-b-3xl pt-32 pb-8 mb-12 shadow-2xl overflow-hidden"
+        className={`relative rounded-b-3xl pt-32 pb-8 mb-12 shadow-2xl overflow-hidden ${colors.bg[400]} transition-all duration-300`}
         id="animation"
       >
+        {/* Section Title */}
         <div className="flex justify-center relative z-30">
-          <h2 className="text-7xl font-tiltprism text-orange-400 drop-shadow-lg neon-flicker">
+          <h2 className={`text-7xl font-tiltprism ${colors.text[400]} drop-shadow-lg neon-flicker transition-colors duration-300`}>
             Animation
           </h2>
         </div>
-        {/* Transparent-to-orange vertical gradient overlay at the top */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 rounded-b-3xl" style={{background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(251,146,60,0.85) 45%, rgba(253,186,116,0.95) 75%, rgba(251,146,60,1) 100%)'}}></div>
+
+        {/* Theme-aware gradient overlay */}
+        <div 
+          className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 rounded-b-3xl transition-all duration-500"
+          style={gradientStyle}
+        />
+
         <div className="rounded-2xl p-2 relative z-20">
           <div className="align-element relative z-10 max-w-7xl mx-auto">
-            {/* Film frame style video */}
+            
+            {/* Film Frame Video Player */}
             <div className="flex justify-center mb-6 mt-16">
               <div className="w-full max-w-2xl relative flex flex-col items-stretch">
-                {/* Top colored bar with sprockets */}
-                <div className="relative w-full h-5 bg-orange-300 flex items-center justify-center rounded-t-lg">
+                {/* Top Film Bar with Sprockets */}
+                <div className={`relative w-full h-5 ${colors.bg[300]} flex items-center justify-center rounded-t-lg transition-colors duration-300`}>
                   <div className="absolute inset-0 flex justify-between px-2 py-1 w-full">
                     {[...Array(4)].map((_, i) => (
-                      <div key={i} className="w-5 h-3 bg-orange-400 rounded-sm flex items-center justify-center">
-                        <div className="w-5 h-2.5 bg-orange-700 rounded-sm" style={{transform: 'scale(0.9)'}}></div>
+                      <div key={i} className={`w-5 h-3 ${colors.bg[400]} rounded-sm flex items-center justify-center transition-colors duration-300`}>
+                        <div className={`w-5 h-2.5 ${colors.bg[700]} rounded-sm transition-colors duration-300`} style={{transform: 'scale(0.9)'}}></div>
                       </div>
                     ))}
                   </div>
                 </div>
-                {/* Video */}
-                <div className="w-full aspect-video overflow-hidden shadow-lg bg-orange-100">
+
+                {/* Video Container */}
+                <div className={`w-full aspect-video overflow-hidden shadow-lg ${colors.bg[100]} transition-colors duration-300`}>
                   {activeVideo.type === "youtube" ? (
                     <iframe
                       width="560"
@@ -107,7 +194,7 @@ const Animation = () => {
                       referrerPolicy="strict-origin-when-cross-origin"
                       allowFullScreen
                       className="w-full h-full"
-                    ></iframe>
+                    />
                   ) : (
                     <iframe
                       src={getVideoUrl(activeVideo, animationProjects.findIndex(p => p === activeVideo))}
@@ -117,61 +204,62 @@ const Animation = () => {
                       title="Rafael Laidlaw Animation Demo Reel"
                       allowFullScreen
                       className="w-full h-full"
-                    ></iframe>
+                    />
                   )}
                 </div>
-                {/* Bottom colored bar with sprockets */}
-                <div className="relative w-full h-5 bg-orange-300 flex items-center justify-center rounded-b-lg">
+
+                {/* Bottom Film Bar with Sprockets */}
+                <div className={`relative w-full h-5 ${colors.bg[300]} flex items-center justify-center rounded-b-lg transition-colors duration-300`}>
                   <div className="absolute inset-0 flex justify-between px-2 py-1 w-full">
                     {[...Array(4)].map((_, i) => (
-                      <div key={i} className="w-5 h-3 bg-orange-400 rounded-sm flex items-center justify-center">
-                        <div className="w-5 h-2.5 bg-orange-700 rounded-sm" style={{transform: 'scale(0.9)'}}></div>
+                      <div key={i} className={`w-5 h-3 ${colors.bg[400]} rounded-sm flex items-center justify-center transition-colors duration-300`}>
+                        <div className={`w-5 h-2.5 ${colors.bg[700]} rounded-sm transition-colors duration-300`} style={{transform: 'scale(0.9)'}}></div>
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="text-center text-orange-200 font-mono text-lg ">Hover To View || Click To Play</div>
-            {/* Animation cards with lift/glow on hover */}
+
+            {/* Instructions Text */}
+            <div className={`text-center ${colors.text[200]} font-mono text-lg transition-colors duration-300`}>
+              Hover To View || Click To Play
+            </div>
+
+            {/* Animation Project Cards */}
             <div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 mt-4 justify-items-center px-4">
                 {animationProjects.map((project, idx) => (
                   <button
                     key={idx}
                     type="button"
-                    className="flex flex-col items-center w-full max-w-xs mx-auto focus:outline-none"
-                    onClick={() => setShouldAutoplay(true)}
-                    onMouseEnter={() => { setActiveVideo(project); setHoveredIdx(idx); setShouldAutoplay(false); }}
-                    onMouseLeave={() => setHoveredIdx(null)}
+                    className="flex flex-col items-center w-full max-w-xs mx-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    onClick={handleCardClick}
+                    onMouseEnter={() => handleCardHover(project, idx)}
+                    onMouseLeave={handleCardLeave}
                     tabIndex={0}
                     aria-label={`Play video for ${project.title}`}
                     style={{ background: 'none', border: 'none', padding: 0, margin: 0 }}
                   >
                     <article
-                      className="border-2 border-orange-300 rounded-xl flex flex-col items-center transition-transform duration-300 w-full shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-orange-500 hover:bg-orange-200 hover:scale-105 hover:z-20 relative overflow-hidden"
+                      className={`animation-card border-2 ${colors.border[300]} rounded-xl flex flex-col items-center w-full shadow-md relative overflow-hidden transition-all duration-300`}
                       style={{ zIndex: 10 - idx }}
                     >
+                      {/* Card Image */}
                       <img
-                        src={
-                          hoveredIdx === idx
-                            ? (idx === 0 ? atticGif : idx === 1 ? animGif : wayGif)
-                            : idx === 0
-                              ? atticCover
-                              : idx === 1
-                                ? animDemoSprite
-                                : wayCover
-                        }
+                        src={getCardImage(idx)}
                         alt={project.title}
                         width={312}
                         height={104}
-                        className="w-[312px] h-[104px] object-cover rounded-t mb-0 border-b border-orange-400 relative z-20"
+                        className={`w-[312px] h-[104px] object-cover rounded-t mb-0 border-b ${colors.border[400]} relative z-20 transition-colors duration-300`}
                       />
-                      <div className="bg-orange-300 rounded-b-xl px-3 py-2 w-full flex flex-col items-center">
-                        <h3 className="text-lg font-mono text-orange-600 mb-1 drop-shadow animate-pulse-glow relative z-20 text-center">
+                      
+                      {/* Card Content */}
+                      <div className={`${colors.bg[300]} rounded-b-xl px-3 py-2 w-full flex flex-col items-center transition-colors duration-300`}>
+                        <h3 className={`text-lg font-mono ${colors.text[600]} mb-1 drop-shadow animate-pulse-glow relative z-20 text-center transition-colors duration-300`}>
                           {project.title}
                         </h3>
-                        <p className="text-orange-600 text-center text-sm mb-0 relative z-20">
+                        <p className={`${colors.text[600]} text-center text-sm mb-0 relative z-20 transition-colors duration-300`}>
                           {project.description}
                         </p>
                       </div>
@@ -183,27 +271,6 @@ const Animation = () => {
           </div>
         </div>
       </section>
-      {/* Custom glowing animation for SectionTitle and card titles */}
-      <style>{`
-        @keyframes neon-flicker {
-          0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-            text-shadow:
-              0 0 12px #ffb347,
-              0 0 32px #ffb347,
-              0 0 64px #ff8008,
-              0 0 128px #ff8008;
-            opacity: 1;
-          }
-          20%, 22%, 24%, 55% {
-            text-shadow: none;
-            opacity: 0.7;
-          }
-        }
-        .neon-flicker {
-          color: #ffb347;
-          animation: neon-flicker 2.5s infinite;
-        }
-      `}</style>
     </div>
   );
 };

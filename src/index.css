@@ -13,6 +13,7 @@
     @apply mx-auto max-w-7xl px-8;
   }
   .hover-icon {
-    @apply h-16 w-16 fill-orange-700 lg:hover:fill-orange-300 duration-300 animate-fade3;
+    @apply h-16 w-16 duration-300 animate-fade3;
+    fill: currentColor;
   }
 }

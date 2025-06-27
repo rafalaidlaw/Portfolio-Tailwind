@@ -27,6 +27,7 @@ import bbWestAdSTILL from "../assets/bbWestAd-STILL.png";
 import longWestAd from "../assets/longWestAd.gif";
 import longWestAdSTILL from "../assets/longWestAd-STILL.png";
 import GridCopy from "./GridCopy";
+import { useTheme } from "../context/ThemeContext";
 
 import rogersSquare from "../assets/rogersSquare.gif";
 import rogersSquareSTILL from "../assets/rogersSquare-STILL.png";
@@ -35,6 +36,8 @@ import GridAdRogers from "./GridAdRogers";
 import GridText from "./GridText";
 
 export const InternetBanner = () => {
+  const { colors } = useTheme();
+  
   return (
     <div className="pt-20 flex justify-center">
       <div className=" max-w-4xl scale-110">

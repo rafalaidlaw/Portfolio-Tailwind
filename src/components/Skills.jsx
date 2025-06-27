@@ -2,55 +2,58 @@ import { skills } from "../data";
 import SectionTitle from "./SectionTitle";
 import SkillsCard from "./SkillsCard";
 import { useState } from "react";
+import { useTheme } from "../context/ThemeContext";
 
 const Skills = () => {
   const [name, setName] = useState(
     "These are the languages I have worked in. Click icon for more info."
   );
+  const { colors } = useTheme();
+  
   const handleClick = (text) => {
     setName(text);
     console.log(this);
   };
   return (
     <div
-      className="bg-orange-300 border-b-2 border-orange-500 max-w-7xl"
+      className={`${colors.bg[300]} border-b-2 ${colors.border[500]} max-w-7xl`}
       onMouseLeave={() =>
         handleClick(
           "These are the languages I have worked in. Click icon for more info."
         )
       }
     >
-      <div className="border-r-2 border-orange-300">
-        <div className="border-l-2 border-orange-300">
-          <div className="border-b-2 border-orange-500">
-            <div className="border-r-2 border-orange-300">
-              <div className="border-l-2 border-orange-300">
-                <div className="border-b-2 border-orange-500">
-                  <div className="border-r-2 border-orange-300">
-                    <div className="border-l-2 border-orange-300">
-                      <div className="border-b-2 border-orange-500">
-                        <div className="border-r-2 border-orange-300">
-                          <div className="border-l-2 border-orange-300">
-                            <div className="border-b-2 border-orange-500">
-                              <div className="border-r-2 border-orange-300">
-                                <div className="border-l-2 border-orange-300">
-                                  <div className="border-b-2 border-orange-500">
-                                    <div className="border-r-2 border-orange-300">
-                                      <div className="border-l-2 border-orange-300">
-                                        <div className="border-b-2 border-orange-500">
-                                          <div className="border-r-2 border-orange-300">
-                                            <div className="border-l-2 border-orange-300">
-                                              <div className="border-b-2 border-orange-500">
-                                                <div className="border-r-2 border-orange-300">
-                                                  <div className="border-l-2 border-orange-300">
-                                                    <div className="border-b-2 border-orange-500">
-                                                      <div className="border-r-2 border-orange-300">
-                                                        <div className="border-l-2 border-orange-300">
-                                                          <div className="border-b-2 border-orange-500">
-                                                            <div className="border-r-2 border-orange-300">
-                                                              <div className="border-l-2 border-orange-300">
-                                                                <div className="border-b-2 border-orange-500">
-                                                                  <section className="py-5 align-element bg-orange-400 ">
+      <div className={`border-r-2 ${colors.border[300]}`}>
+        <div className={`border-l-2 ${colors.border[300]}`}>
+          <div className={`border-b-2 ${colors.border[500]}`}>
+            <div className={`border-r-2 ${colors.border[300]}`}>
+              <div className={`border-l-2 ${colors.border[300]}`}>
+                <div className={`border-b-2 ${colors.border[500]}`}>
+                  <div className={`border-r-2 ${colors.border[300]}`}>
+                    <div className={`border-l-2 ${colors.border[300]}`}>
+                      <div className={`border-b-2 ${colors.border[500]}`}>
+                        <div className={`border-r-2 ${colors.border[300]}`}>
+                          <div className={`border-l-2 ${colors.border[300]}`}>
+                            <div className={`border-b-2 ${colors.border[500]}`}>
+                              <div className={`border-r-2 ${colors.border[300]}`}>
+                                <div className={`border-l-2 ${colors.border[300]}`}>
+                                  <div className={`border-b-2 ${colors.border[500]}`}>
+                                    <div className={`border-r-2 ${colors.border[300]}`}>
+                                      <div className={`border-l-2 ${colors.border[300]}`}>
+                                        <div className={`border-b-2 ${colors.border[500]}`}>
+                                          <div className={`border-r-2 ${colors.border[300]}`}>
+                                            <div className={`border-l-2 ${colors.border[300]}`}>
+                                              <div className={`border-b-2 ${colors.border[500]}`}>
+                                                <div className={`border-r-2 ${colors.border[300]}`}>
+                                                  <div className={`border-l-2 ${colors.border[300]}`}>
+                                                    <div className={`border-b-2 ${colors.border[500]}`}>
+                                                      <div className={`border-r-2 ${colors.border[300]}`}>
+                                                        <div className={`border-l-2 ${colors.border[300]}`}>
+                                                          <div className={`border-b-2 ${colors.border[500]}`}>
+                                                            <div className={`border-r-2 ${colors.border[300]}`}>
+                                                              <div className={`border-l-2 ${colors.border[300]}`}>
+                                                                <div className={`border-b-2 ${colors.border[500]}`}>
+                                                                  <section className={`py-5 align-element ${colors.bg[400]}`}>
                                                                     <SectionTitle
                                                                       text={name}
                                                                       className="min-h-[5rem]"
@@ -73,14 +76,12 @@ const Skills = () => {
                                                                               onMouseLeave={() => setName("These are the languages I have worked in. Click icon for more info.")}
                                                                               className="animate-box1"
                                                                             >
-                                                                              <article className="hover:text-orange-900 duration-300">
-                                                                                <span>
+                                                                              <article className={`${colors.hover[900]} duration-300`}>
+                                                                                <span className={`${colors.text[700]} hover:${colors.text[300]} transition-colors duration-300`}>
                                                                                   {
                                                                                     skill.icon
                                                                                   }
                                                                                 </span>
-                                                                                {/* <h4 className="mt-6 font-bold text-orange-200">{title}</h4>
-      <p className="mt-2 text-orange-200">{text}</p> */}
                                                                               </article>
                                                                             </button>
                                                                           );

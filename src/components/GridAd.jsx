@@ -1,21 +1,24 @@
 import React from "react";
+import { useTheme } from "../context/ThemeContext";
 
 export const GridAd = ({ img, still }) => {
+  const { colors } = useTheme();
+  
   return (
     <div>
       <article className=" p-1">
-        <div className="border-b-2 border-orange-700 ">
-          <div className="border-t-2 border-orange-500 ">
-            <div className="border-l-2 border-orange-600 ">
-              <div className="border-r-2 border-orange-600">
-                <div className="border-b-2 border-orange-700 ">
-                  <div className="border-t-2 border-orange-500 ">
-                    <div className="border-l-2 border-orange-600 ">
-                      <div className="border-r-2 border-orange-600">
-                        <div className="border-b-2 border-orange-700 ">
-                          <div className="border-t-2 border-orange-500 ">
+        <div className={`border-b-2 ${colors.border[700]}`}>
+          <div className={`border-t-2 ${colors.border[500]}`}>
+            <div className={`border-l-2 ${colors.border[600]}`}>
+              <div className={`border-r-2 ${colors.border[600]}`}>
+                <div className={`border-b-2 ${colors.border[700]}`}>
+                  <div className={`border-t-2 ${colors.border[500]}`}>
+                    <div className={`border-l-2 ${colors.border[600]}`}>
+                      <div className={`border-r-2 ${colors.border[600]}`}>
+                        <div className={`border-b-2 ${colors.border[700]}`}>
+                          <div className={`border-t-2 ${colors.border[500]}`}>
                             <div className=" relative">
-                              <div className="bg-orange-400 ">
+                              <div className={`${colors.bg[400]}`}>
                                 <img
                                   src={still}
                                   alt="Rafael in Packaging"
