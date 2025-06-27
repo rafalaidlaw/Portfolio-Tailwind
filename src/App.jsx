@@ -14,6 +14,7 @@ import MatrixRainingCode from "./components/MatrixRainingCode";
 import InternetBanner from "./components/InternetBanner";
 import InternetBannerSMALL from "./components/InternetBannerSMALL";
 import ModGodSite from "./components/ModGodSite";
+import Animation from "./components/Animation";
 
 import Nubbin from "./components/Nubbin";
 
@@ -68,6 +69,11 @@ const App = () => {
                                   </div>
                                   <div className="md:hidden block">
                                     <InternetBannerSMALL />
+                                  </div>
+                                  <div className="flex justify-center">
+                                    <div className="max-w-6xl">
+                                      <Animation />
+                                    </div>
                                   </div>
                                   <div className="flex justify-center">
                                     <div className="max-w-6xl">

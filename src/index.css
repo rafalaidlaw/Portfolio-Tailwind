@@ -1,12 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Monoton&family=Oswald:wght@200..700&family=Turret+Road:wght@200;300;400;500;700;800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-  
-
+.font-tiltprism {
+  font-family: 'Tilt Prism', cursive;
+}
 
 @layer components {
   .align-element {
