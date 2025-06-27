@@ -52,9 +52,8 @@ const Skills = () => {
                                                                 <div className="border-b-2 border-orange-500">
                                                                   <section className="py-5 align-element bg-orange-400 ">
                                                                     <SectionTitle
-                                                                      text={
-                                                                        name
-                                                                      }
+                                                                      text={name}
+                                                                      className="min-h-[5rem]"
                                                                     />
                                                                     <div className="py-5 gap-2 flex flex-wrap justify-center">
                                                                       {skills.map(
@@ -69,11 +68,9 @@ const Skills = () => {
                                                                               key={
                                                                                 skill.id
                                                                               }
-                                                                              onClick={() =>
-                                                                                handleClick(
-                                                                                  skill.text
-                                                                                )
-                                                                              }
+                                                                              onClick={() => setName(skill.text)}
+                                                                              onMouseEnter={() => setName(skill.text)}
+                                                                              onMouseLeave={() => setName("These are the languages I have worked in. Click icon for more info.")}
                                                                               className="animate-box1"
                                                                             >
                                                                               <article className="hover:text-orange-900 duration-300">
