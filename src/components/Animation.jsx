@@ -32,23 +32,49 @@ const animationProjects = [
 ];
 
 const Animation = () => {
-  const { colors, isBlueTheme } = useTheme();
+  const { colors, currentTheme } = useTheme();
   const [activeVideo, setActiveVideo] = useState(animationProjects[0]);
   const [hoveredIdx, setHoveredIdx] = useState(null);
   const [shouldAutoplay, setShouldAutoplay] = useState(false);
 
   // Memoized gradient styles for better performance
-  const gradientStyle = useMemo(() => ({
-    background: isBlueTheme 
-      ? 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(59,130,246,0.3) 45%, rgba(147,197,253,0.85) 75%, rgba(59,130,246,1) 100%)'
-      : 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(251,146,60,0.3) 45%, rgba(253,186,116,0.85) 75%, rgba(251,146,60,1) 100%)'
-  }), [isBlueTheme]);
+  const gradientStyle = useMemo(() => {
+    switch (currentTheme) {
+      case 'blue':
+        return {
+          background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(59,130,246,0.3) 45%, rgba(147,197,253,0.85) 75%, rgba(59,130,246,1) 100%)'
+        };
+      case 'purple':
+        return {
+          background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(147,51,234,0.3) 45%, rgba(196,181,253,0.85) 75%, rgba(147,51,234,1) 100%)'
+        };
+      default: // orange
+        return {
+          background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 20%, rgba(251,146,60,0.3) 45%, rgba(253,186,116,0.85) 75%, rgba(251,146,60,1) 100%)'
+        };
+    }
+  }, [currentTheme]);
 
   // Memoized neon colors for better performance
-  const neonColors = useMemo(() => ({
-    primary: isBlueTheme ? '#60a5fa' : '#ffb347',
-    secondary: isBlueTheme ? '#2563eb' : '#ff8008'
-  }), [isBlueTheme]);
+  const neonColors = useMemo(() => {
+    switch (currentTheme) {
+      case 'blue':
+        return {
+          primary: '#60a5fa',
+          secondary: '#2563eb'
+        };
+      case 'purple':
+        return {
+          primary: '#a855f7',
+          secondary: '#7c3aed'
+        };
+      default: // orange
+        return {
+          primary: '#ffb347',
+          secondary: '#ff8008'
+        };
+    }
+  }, [currentTheme]);
 
   // Optimized video URL helper with useCallback
   const getVideoUrl = useCallback((project, idx) => {

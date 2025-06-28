@@ -3,6 +3,7 @@ import heroImgBlue from "../assets/skillcube_14-export-blue.gif";
 import shadowImg from "../assets/shadowpng.png";
 import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
+import React, { useEffect, useRef, useState } from "react";
 
 // borderGenerator = (n) => {
 //   let nubbin = [];
@@ -25,7 +26,21 @@ import { useTheme } from "../context/ThemeContext";
 
 const Hero = () => {
   const { colors, isBlueTheme } = useTheme();
-  
+  const [showBlue, setShowBlue] = useState(isBlueTheme);
+  const [fade, setFade] = useState(false);
+  const prevTheme = useRef(isBlueTheme);
+
+  useEffect(() => {
+    if (prevTheme.current !== isBlueTheme) {
+      setFade(true);
+      setTimeout(() => {
+        setShowBlue(isBlueTheme);
+        setFade(false);
+        prevTheme.current = isBlueTheme;
+      }, 500); // duration matches CSS transition
+    }
+  }, [isBlueTheme]);
+
   return (
     <div
       className={`${colors.bg[300]} Aborder-t-2 ${colors.border[200]} max-w-7xl`}
@@ -122,12 +137,25 @@ const Hero = () => {
                                                           </div>
                                                         </article>
                                                         <div className="">
-                                                          <div className="flex justify-center animate-fade  ">
-                                                            <div className="animate-float ">
+                                                          <div className="flex justify-center animate-fade">
+                                                            <div className="animate-float relative w-[180px] h-[240px]">
+                                                              {/* Blue Skill Cube */}
                                                               <img
-                                                                src={isBlueTheme ? heroImgBlue : heroImg}
-                                                                alt="Rafael in Packaging"
-                                                                className=""
+                                                                src={heroImgBlue}
+                                                                alt="Blue Skill Cube"
+                                                                className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 scale-90 translate-y-2 ${
+                                                                  showBlue && !fade ? "opacity-100" : "opacity-0"
+                                                                }`}
+                                                                style={{ zIndex: showBlue ? 2 : 1 }}
+                                                              />
+                                                              {/* Orange Skill Cube */}
+                                                              <img
+                                                                src={heroImg}
+                                                                alt="Orange Skill Cube"
+                                                                className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 ${
+                                                                  !showBlue && !fade ? "opacity-100" : "opacity-0"
+                                                                }`}
+                                                                style={{ zIndex: !showBlue ? 2 : 1 }}
                                                               />
                                                             </div>
                                                           </div>

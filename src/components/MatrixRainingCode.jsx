@@ -2,12 +2,20 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import MatrixRainingCodeOrange from "./MatrixRainingCodeOrange";
 import MatrixRainingCodeBlue from "./MatrixRainingCodeBlue";
+import MatrixRainingCodePurple from "./MatrixRainingCodePurple";
 
 const MatrixRainingCode = () => {
-  const { isBlueTheme } = useTheme();
+  const { currentTheme } = useTheme();
 
-  // Switch between orange and blue matrix components based on theme
-  return isBlueTheme ? <MatrixRainingCodeBlue /> : <MatrixRainingCodeOrange />;
+  // Switch between orange, blue, and purple matrix components based on theme
+  switch (currentTheme) {
+    case 'blue':
+      return <MatrixRainingCodeBlue />;
+    case 'purple':
+      return <MatrixRainingCodePurple />;
+    default:
+      return <MatrixRainingCodeOrange />;
+  }
 };
 
 export default MatrixRainingCode;
