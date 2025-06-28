@@ -3,7 +3,25 @@ import { FaGithubSquare, FaLinkedin, FaEtsy, FaReact } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
-  const { colors, toggleTheme, isBlueTheme } = useTheme();
+  const { colors, toggleTheme, currentTheme } = useTheme();
+
+  const getNextTheme = () => {
+    const themes = ['orange', 'blue', 'purple'];
+    const currentIndex = themes.indexOf(currentTheme);
+    const nextIndex = (currentIndex + 1) % themes.length;
+    return themes[nextIndex];
+  };
+
+  const getThemeColor = (theme) => {
+    switch (theme) {
+      case 'blue':
+        return 'bg-blue-400';
+      case 'purple':
+        return 'bg-purple-400';
+      default:
+        return 'bg-orange-400';
+    }
+  };
 
   return (
     <div className={`border-t-2 ${colors.border[500]}`}>
@@ -66,9 +84,9 @@ const Navbar = () => {
                                           <button
                                             onClick={toggleTheme}
                                             className={`h-8 w-8 ${colors.text[500]} ${colors.hover[900]} duration-300 flex items-center justify-center rounded-full border-2 ${colors.border[500]} hover:${colors.bg[500]}`}
-                                            title={`Switch to ${isBlueTheme ? 'Orange' : 'Blue'} theme`}
+                                            title={`Switch to ${getNextTheme().charAt(0).toUpperCase() + getNextTheme().slice(1)} theme`}
                                           >
-                                            <div className={`w-4 h-4 rounded-full ${isBlueTheme ? 'bg-orange-400' : 'bg-blue-400'}`}></div>
+                                            <div className={`w-4 h-4 rounded-full ${getThemeColor(getNextTheme())}`}></div>
                                           </button>
                                         </div>
                                       </div>
